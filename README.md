@@ -16,5 +16,8 @@ Entry workspace for the [Swarm Alignment Hackathon](https://apartresearch.com/sp
 - Only work done during the sprint weekend is submitted for judging. Any earlier or reused work will be clearly marked as pre-existing here and in the report.
 - Code, data and results will be added during and after the sprint.
 
+## Note
+The author is very curious and may introduce deviations from the plan during the sprint. Every deviation will be logged and clearly labelled, so planned and unplanned work stay easy to tell apart.
+
 ## Status
 Preparing. Nothing to run yet.
