@@ -4,7 +4,7 @@ Entry workspace for the [Swarm Alignment Hackathon](https://apartresearch.com/sp
 
 ## About the event
 - **When:** Friday 6 to Sunday 8 November 2026, online.
-  - **Start:** Fri 6 Nov 2026 (IST). The page gives no start time yet; this will be updated when it does.
+  - **Start:** Fri 6 Nov 2026, 5:29 PM IST (= Fri 00:00 AoE). The sprint runs 72 hours, to the deadline below.
   - **End (submission deadline):** Sun 8 Nov 2026, 11:59 PM AoE = **Mon 9 Nov 2026, 5:29 PM IST**.
   - Times in this repo are IST unless marked AoE.
 - **Theme:** safety of multi-agent ("swarm") AI systems: how groups of AI agents coordinate, how that can go wrong, and how to study, contain and oversee them.
