@@ -22,3 +22,13 @@
 !prep/18_LITERATURE_COLLECTION.md
 !prep/19_TOP_PAPERS_PRELIMINARY.md
 !prep/20_LITERATURE_SYNTHESIS.md
+
+# sprint code and preregistration (allowed 2026-11-06 with owner approval)
+!engine/
+!engine/*.py
+!tests/
+!tests/*.py
+!bench/
+!bench/*.py
+!prereg/
+!prereg/*.md
