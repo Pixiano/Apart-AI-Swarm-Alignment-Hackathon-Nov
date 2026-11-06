@@ -64,6 +64,9 @@ class BudgetExceeded(Exception):
     pass
 
 
+UPLIFT = 1.05   # tally markup: the dashboard has read about 5% above the summed per-call cost
+
+
 class Budget:
     """Metered spend (USD, from the API cost field). state: ok | soft (>= soft cap: finish the current checkpoint) | hard (>= hard cap: stop).
     Persisted to a JSON file so a restart keeps the total."""
@@ -79,7 +82,7 @@ class Budget:
 
     def add(self, cost):
         with self.lock:
-            self.spent += cost
+            self.spent += cost * UPLIFT
             if self.path:
                 json.dump({"spent": round(self.spent, 6)}, open(self.path, "w"))
 
