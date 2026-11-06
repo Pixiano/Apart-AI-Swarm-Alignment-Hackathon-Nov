@@ -18,7 +18,7 @@ def build_cfg(model, n, arm, dose, seed, prompt="P-MAIN", with_board=True, blind
     random.Random(f"{seed}-roles").shuffle(seats)
     llm_seats, bot_seats = sorted(seats[:N_LLM[n]]), sorted(seats[N_LLM[n]:])
     bots = {s: Bot(arm if i < dose else "neutral", seed, s) for i, s in enumerate(bot_seats)}
-    return {"episode": f"{model}-N{n}-{arm}{dose}-{seed}", "seed": seed, "n": n, "llm_seats": llm_seats, "bots": bots, "model": model,
+    return {"arm": arm, "dose": dose, "episode": f"{model}-N{n}-{arm}{dose}-{seed}", "seed": seed, "n": n, "llm_seats": llm_seats, "bots": bots, "model": model,
             "prompt": prompt, "cap": llm.MAX_OUT, "with_board": with_board, "blind": [llm_seats[0]] if blind_one else []}
 
 
@@ -32,10 +32,12 @@ if __name__ == "__main__":
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     cfg = build_cfg(a.model, a.n, a.arm, a.dose, a.seed, a.prompt, not a.no_board, a.blind_one)
-    call = llm.cached(llm.hosted(llm.Limiter()) if a.hosted else llm.local(), llm.Cache(os.path.join(a.out, "cache")))
+    budget = llm.Budget(os.path.join(a.out, "budget.json"))
+    call = llm.budgeted(llm.cached(llm.hosted(llm.Limiter()) if a.hosted else llm.local(), llm.Cache(os.path.join(a.out, "cache"))), budget)
     log = EventLog(os.path.join(a.out, cfg["episode"] + ".jsonl"))
     s = run_episode(cfg, call, log)
     log.close()
     s["llm_seats"], s["bot_seats"] = cfg["llm_seats"], sorted(cfg["bots"])
     json.dump(s, open(os.path.join(a.out, cfg["episode"] + ".summary.json"), "w"), indent=1)
+    print("budget", budget.state, round(budget.spent, 5))
     print(json.dumps({k: s[k] for k in ("episode", "pool_end", "collapsed", "collapse_round", "first_llm_read_board", "first_llm_write_board", "calls", "empty_calls")}))

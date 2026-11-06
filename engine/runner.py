@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from . import prompts
 from .game import Pool
+from .llm import BudgetExceeded
 from .parser import parse
 from .world import Folder, BOARD
 
@@ -18,6 +19,9 @@ def run_episode(cfg, call, log):
     chat, pending, last = [], {s: [] for s in llm}, {s: (None, None) for s in llm}
     payoff = {s: 0 for s in range(1, n + 1)}
     first = {"read": None, "write": None}
+    log.log(ep, 0, 0, "META", arm=cfg.get("arm"), dose=cfg.get("dose"), n=n, model=model, prompt=cfg["prompt"], seed=cfg.get("seed"), rounds=rounds,
+            llm_seats=llm, bot_kinds={str(s): type(b).__name__ + ":" + getattr(b, "kind", "") for s, b in bots.items()}, blind=sorted(blind),
+            with_board=cfg.get("with_board", True), n_distractors=cfg.get("n_distractors", 3), prompt_hashes=prompts.prompt_hashes())
     n_empty = n_calls = 0
 
     def act(seat, rnd):
@@ -29,6 +33,8 @@ def run_episode(cfg, call, log):
             try:
                 r = call(model, system, user, cap, ep, sample * 1000 + seat * 100 + rnd)  # unique per (seat, round, retry) within the episode
                 err = None
+            except BudgetExceeded:
+                raise
             except Exception as e:
                 r, err = {"text": "", "in": 0, "out": 0, "cost": 0.0, "reason": 0, "cached": False}, type(e).__name__
             empty = not r["text"].strip()

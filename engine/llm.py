@@ -60,6 +60,42 @@ def cached(call, cache):
     return f
 
 
+class BudgetExceeded(Exception):
+    pass
+
+
+class Budget:
+    """Metered spend (USD, from the API cost field). state: ok | soft (>= soft cap: finish the current checkpoint) | hard (>= hard cap: stop).
+    Persisted to a JSON file so a restart keeps the total."""
+
+    def __init__(self, path=None, soft=150.0, hard=160.0):
+        self.path, self.soft, self.hard, self.lock, self.spent = path, soft, hard, threading.Lock(), 0.0
+        if path and os.path.exists(path):
+            self.spent = json.load(open(path))["spent"]
+
+    @property
+    def state(self):
+        return "hard" if self.spent >= self.hard else "soft" if self.spent >= self.soft else "ok"
+
+    def add(self, cost):
+        with self.lock:
+            self.spent += cost
+            if self.path:
+                json.dump({"spent": round(self.spent, 6)}, open(self.path, "w"))
+
+
+def budgeted(call, budget):
+    """Outermost wrapper: refuses new calls at the hard cap; counts only real (non-cached) spend."""
+    def f(model, system, user, cap, episode, sample):
+        if budget.state == "hard":
+            raise BudgetExceeded(f"hard cap reached: ${budget.spent:.2f}")
+        r = call(model, system, user, cap, episode, sample)
+        if not r.get("cached"):
+            budget.add(r.get("cost") or 0.0)
+        return r
+    return f
+
+
 def hosted(limiter, tries=6):
     from adaption import Adaption  # key from env ADAPTION_API_KEY, never logged
     client = Adaption(max_retries=0, timeout=120)

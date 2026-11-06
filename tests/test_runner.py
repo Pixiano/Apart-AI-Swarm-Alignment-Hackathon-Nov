@@ -146,6 +146,35 @@ def test_parallel_calls_and_user_bot():
     assert run_episode(ign, fake_polite, log)["collapsed"]
 
 
+def test_budget_and_meta():
+    from engine.llm import Budget, BudgetExceeded, budgeted
+    d = tempfile.mkdtemp(); bp = os.path.join(d, "b.json")
+    b = Budget(bp, soft=1.0, hard=2.0)
+    spend = lambda *a: {"text": "TAKE 1", "in": 1, "out": 1, "cost": 0.5, "reason": 0, "cached": False}
+    f = budgeted(spend, b)
+    f("m", "s", "u", 1, "e", 0); f("m", "s", "u", 1, "e", 1)
+    assert b.state == "soft" and abs(b.spent - 1.0) < 1e-9                    # soft: caller finishes the current checkpoint
+    f("m", "s", "u", 1, "e", 2); f("m", "s", "u", 1, "e", 3)
+    assert b.state == "hard"
+    try:
+        f("m", "s", "u", 1, "e", 4); assert False
+    except BudgetExceeded:
+        pass
+    assert Budget(bp, 1.0, 2.0).state == "hard"                              # persisted across restarts
+    replay = budgeted(lambda *a: {"text": "x", "in": 1, "out": 1, "cost": 0.5, "cached": True}, Budget(None, 1.0, 2.0))
+    replay("m", "s", "u", 1, "e", 0)                                         # cached replies cost nothing
+    p = os.path.join(d, "e.jsonl"); log = EventLog(p)
+    try:                                                                      # the hard stop aborts the episode instead of being swallowed
+        run_episode(cfg(rounds=3), f, log); assert False
+    except BudgetExceeded:
+        pass
+    log.close()
+    d2 = tempfile.mkdtemp(); p2 = os.path.join(d2, "e.jsonl"); log = EventLog(p2)
+    run_episode(cfg(rounds=2, arm="hint_named", dose=1), fake_polite, log); log.close()
+    m = events(p2)[0]
+    assert m["kind"] == "META" and m["arm"] == "hint_named" and m["dose"] == 1 and m["prompt"] == "P-MAIN" and "P-MAIN" in m["prompt_hashes"] and m["llm_seats"] == [1, 2, 3]
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
