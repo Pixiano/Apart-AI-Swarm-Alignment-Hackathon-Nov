@@ -196,6 +196,8 @@ def test_batch_resume_and_stop():
     os.remove(ep + ".summary.json")                                           # a crashed episode: partial log kept aside and rerun
     batch.run_jobs(jobs, fake, out, 1, Budget(None), th.Event(), msgs.append)
     assert os.path.exists(ep + ".partial") and os.path.exists(ep + ".summary.json") and calls["n"] == n0 + 90
+    rows = open(os.path.join(os.path.dirname(out), "costs.csv")).read().splitlines()   # ledger: header + one row per finished episode (4 runs, 1 rerun)
+    assert rows[0].startswith("time_ist,run,episode") and len(rows) >= 4 and rows[1].split(",")[4] == "90"
     over = Budget(None, soft=0.0, hard=1.0)                                   # soft cap reached: no new episode starts
     assert batch.run_jobs([dict(model="fake", n=5, arm="neutral", dose=0, seed=9)], fake, tempfile.mkdtemp(), 1, over, th.Event(), msgs.append) == []
 

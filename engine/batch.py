@@ -2,8 +2,8 @@
 finished calls for free). Hosted and local jobs run concurrently (different resources); hosted episodes in flight = --hosted-workers (the limiter, not the
 worker count, sets the speed); local runs one episode at a time. At the soft budget cap no new episode starts; at the hard cap the running ones abort.
   python -I engine/batch.py --plan g2 --out results/g2_pilot
-Plans: g2 = neutral arm, N=10, seeds 11-18, 4 hosted + 2 local models (the G2 pilot)."""
-import argparse, json, os, sys, threading
+Plans: g2 = neutral arm, N=10, seeds 11-18, 4 hosted + 2 local models (the G2 pilot); g2hint = named hint at dose 5, seeds 21-28; g2more = generic hint, generic denial, named denial at dose 5, seeds 31-38. Every finished episode adds a row to results/costs.csv."""
+import argparse, json, os, sys, threading, time
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -14,10 +14,30 @@ from engine.runner import run_episode
 
 PLANS = {"g2": {"hosted": ["deepseek-v4-flash", "qwen3.8-27b", "qwen3.5-397b", "gemma-4-31b-it"], "local": ["minicpm5-2b", "qwen3-8b"],
                 "n": 10, "arms": [("neutral", 0)], "seeds": range(11, 19)}}
+PLANS["g2more"] = {**PLANS["g2"], "arms": [("hint_generic", 5), ("deny_generic", 5), ("deny_named", 5)], "seeds": range(31, 39)}   # direction and ceiling check
+PLANS["g2hint"] = {**PLANS["g2"], "arms": [("hint_named", 5)], "seeds": range(21, 29)}   # strongest hint (named, all 5 bot seats) to see whether hints lift READ/WRITE
 
 
 def jobs_for(plan, models):
     return [dict(model=m, n=plan["n"], arm=a, dose=d, seed=s) for m in models for s in plan["seeds"] for a, d in plan["arms"]]
+
+
+_LEDGER = threading.Lock()
+
+
+def ledger(out, episode, model, path):
+    """Append one row per finished episode to <out>/../costs.csv, summing the API-reported per-call cost from the episode log."""
+    calls = cost = 0
+    for line in open(path, encoding="utf-8"):
+        e = json.loads(line)
+        if e["kind"] == "CALL":
+            calls += 1; cost += e["cost"] or 0.0
+    f = os.path.join(os.path.dirname(os.path.abspath(out)), "costs.csv")
+    with _LEDGER:
+        new = not os.path.exists(f)
+        with open(f, "a", encoding="utf-8") as h:
+            if new: h.write("time_ist,run,episode,model,calls,cost_usd\n")
+            h.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')},{os.path.basename(os.path.abspath(out))},{episode},{model},{calls},{cost:.6f}\n")
 
 
 def run_jobs(jobs, call, out, workers, budget, stop, say=print):
@@ -41,6 +61,7 @@ def run_jobs(jobs, call, out, workers, budget, stop, say=print):
             log.close()
         s["llm_seats"], s["bot_seats"] = cfg["llm_seats"], sorted(cfg["bots"])
         json.dump(s, open(base + ".summary.json", "w"), indent=1)
+        ledger(out, cfg["episode"], j["model"], base + ".jsonl")
         say(f"done {cfg['episode']} collapsed={s['collapsed']} read={s['first_llm_read_board']} write={s['first_llm_write_board']} spent=${budget.spent:.3f}")
         return s
     with ThreadPoolExecutor(workers) as ex:
