@@ -64,7 +64,7 @@ class BudgetExceeded(Exception):
     pass
 
 
-UPLIFT = 1.05   # tally markup: the dashboard has read about 5% above the summed per-call cost
+UPLIFT = 1.15   # tally markup: the dashboard has read 5-10% above the summed per-call cost; 15% margin by owner
 
 
 class Budget:

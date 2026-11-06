@@ -153,7 +153,7 @@ def test_budget_and_meta():
     spend = lambda *a: {"text": "TAKE 1", "in": 1, "out": 1, "cost": 0.5, "reason": 0, "cached": False}
     f = budgeted(spend, b)
     f("m", "s", "u", 1, "e", 0); f("m", "s", "u", 1, "e", 1)
-    assert b.state == "soft" and abs(b.spent - 1.05) < 1e-9                    # soft: caller finishes the current checkpoint
+    assert b.state == "soft" and abs(b.spent - 1.15) < 1e-9                    # soft: caller finishes the current checkpoint
     f("m", "s", "u", 1, "e", 2); f("m", "s", "u", 1, "e", 3)
     assert b.state == "hard"
     try:
