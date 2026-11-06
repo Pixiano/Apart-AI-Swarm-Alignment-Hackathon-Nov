@@ -202,6 +202,14 @@ def test_batch_resume_and_stop():
     assert batch.run_jobs([dict(model="fake", n=5, arm="neutral", dose=0, seed=9)], fake, tempfile.mkdtemp(), 1, over, th.Event(), msgs.append) == []
 
 
+def test_cache_survives_truncated_file():
+    d = tempfile.mkdtemp(); c = Cache(d)
+    k = c.key("m", "s", "u", 1, "e", 0)
+    open(os.path.join(d, k + ".json"), "w").write('{"text": "tru')               # a kill mid-write
+    assert c.get(k) is None                                                     # a miss, not a crash
+    c.put(k, {"text": "ok"}); assert c.get(k) == {"text": "ok"} and not [f for f in os.listdir(d) if f.endswith(".tmp")]
+
+
 def test_confirmatory_plan():
     from engine import batch
     from engine.cli import build_cfg
@@ -211,6 +219,15 @@ def test_confirmatory_plan():
     ids = [build_cfg(j["model"], j["n"], j["arm"], j["dose"], j["seed"], j["prompt"], True, j["blind_one"])["episode"] for j in h + l]
     assert len(ids) == len(set(ids))                                                  # told/blind cells never share an id (the id is in the cache key)
     assert min(j["seed"] for j in h + l) == 1001 and max(j["seed"] for j in h) == 1050  # confirmation seeds only
+    lm = batch.jobs_for(p, p["local"], model_major=True)
+    ms = [j["model"] for j in lm]
+    assert sorted(lm, key=lambda j: j["seed"]) != lm and ms == sorted(ms, key=p["local"].index)       # one model finished before the next loads
+    assert [j["seed"] for j in lm if j["model"] == "minicpm5-2b"][:13] == [1001] * 13 and len(lm) == len(l)
+    d = tempfile.mkdtemp(); lp = os.path.join(d, "e.jsonl")
+    rows2 = [{"kind": "CALL", "cost": 0.5, "cached": True}, {"kind": "CALL", "cost": 0.25, "cached": False}]
+    open(lp, "w").write("\n".join(json.dumps(x) for x in rows2) + "\n")
+    batch.ledger(os.path.join(d, "run"), "ep", "m", lp)
+    assert open(os.path.join(d, "costs.csv")).read().strip().splitlines()[-1].endswith(",2,0.250000")  # cached replays are not charged twice
     first = [j["seed"] for j in h[:30]]
     assert first == sorted(first)                                                     # seed outermost: a stopped run leaves equal n per cell
 

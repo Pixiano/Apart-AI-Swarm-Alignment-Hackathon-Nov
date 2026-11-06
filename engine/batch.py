@@ -18,11 +18,13 @@ PLANS["g2more"] = {**PLANS["g2"], "arms": [("hint_generic", 5), ("deny_generic",
 PLANS["g2hint"] = {**PLANS["g2"], "arms": [("hint_named", 5)], "seeds": range(21, 29)}   # strongest hint (named, all 5 bot seats) to see whether hints lift READ/WRITE
 
 
-def jobs_for(plan, models):
+def jobs_for(plan, models, model_major=False):
     if "cells" in plan:                      # confirmatory: seed outermost so a stopped run leaves every cell with equal n
-        return [dict(model=m, n=10, arm=c[0], dose=c[1], prompt=c[2], blind_one=c[3], seed=1000 + i)
+        jobs = [dict(model=m, n=10, arm=c[0], dose=c[1], prompt=c[2], blind_one=c[3], seed=1000 + i)
                 for i in range(1, max(plan["n_by_model"][x] for x in models) + 1) for m in models if i <= plan["n_by_model"][m]
                 for c in (plan["cells"] if m in plan["full_cells"] else plan["key_cells"])]
+        # local server holds one model at a time (--models-max 1), so finish one model before loading the next; stable sort keeps seed order inside a model
+        return sorted(jobs, key=lambda j: models.index(j["model"])) if model_major else jobs
     return [dict(model=m, n=plan["n"], arm=a, dose=d, seed=s) for m in models for s in plan["seeds"] for a, d in plan["arms"]]
 
 
@@ -45,7 +47,7 @@ def ledger(out, episode, model, path):
     for line in open(path, encoding="utf-8"):
         e = json.loads(line)
         if e["kind"] == "CALL":
-            calls += 1; cost += e["cost"] or 0.0
+            calls += 1; cost += 0.0 if e.get("cached") else (e["cost"] or 0.0)   # a resumed episode replays cached calls: those were already paid for
     f = os.path.join(os.path.dirname(os.path.abspath(out)), "costs.csv")
     with _LEDGER:
         new = not os.path.exists(f)
@@ -94,7 +96,7 @@ if __name__ == "__main__":
     if a.only in (None, "hosted"):
         groups.append((jobs_for(plan, plan["hosted"]), llm.budgeted(llm.cached(llm.hosted(llm.Limiter()), cache), budget), a.hosted_workers))
     if a.only in (None, "local"):
-        groups.append((jobs_for(plan, plan["local"]), llm.budgeted(llm.cached(llm.local(), cache), budget), 1))
+        groups.append((jobs_for(plan, plan["local"], model_major=True), llm.budgeted(llm.cached(llm.local(), cache), budget), 1))
     ts = [threading.Thread(target=run_jobs, args=(j, c, a.out, w, budget, stop)) for j, c, w in groups]
     [t.start() for t in ts]; [t.join() for t in ts]
     print("finished; spent $%.4f state=%s" % (budget.spent, budget.state))

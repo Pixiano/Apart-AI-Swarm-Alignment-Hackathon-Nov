@@ -41,10 +41,16 @@ class Cache:
 
     def get(self, k):
         p = os.path.join(self.dir, k + ".json")
-        return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+        try:
+            return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+        except ValueError:                      # truncated by a kill: treat as a miss
+            return None
 
     def put(self, k, rec):
-        json.dump(rec, open(os.path.join(self.dir, k + ".json"), "w", encoding="utf-8"))
+        p = os.path.join(self.dir, k + ".json")
+        tmp = f"{p}.{threading.get_ident()}.tmp"
+        json.dump(rec, open(tmp, "w", encoding="utf-8"))
+        os.replace(tmp, p)                      # atomic: a reader sees the whole file or none
 
 
 def cached(call, cache):
