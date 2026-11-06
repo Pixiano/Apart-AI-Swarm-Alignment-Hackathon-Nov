@@ -340,3 +340,27 @@ Episodes run to round 30 after collapse (18.1), so collapse does not end follow-
 
 ### 19.4 Deferred to prereg-v1 (accepted by the third audit)
 D1 cost cut order wording (qwen non-hint/deny cells first, then the deepseek n=100 contrasts); D2 told-arm gate applies to classes that have a told cell at G2; D3 consequence of a failed sham check (report Q3 effects with the sham gap as a caveat); D4 one local-exploration hours line; D5 pool all neutral pilot episodes for the 45-round rule and define "batch" as one runner session; D6 chat-blind P4 stated as a descriptive comparison with an interval. Also from round 2: seat table for sham, told and blind arms; Q table; regex text; Holm pooling model details.
+
+
+## 20. Hosted API measurements (2026-11-06, pre-sprint G1 look; wins over 17.4 and 18.3-18.4 where they differ)
+
+Measured through the SDK with `max_retries=0`, about 400 calls in total, spend about $0.03. Scripts are local-only. These are pre-sprint probes; sprint-weekend G1 repeats them in the runner and the weekend numbers are the ones reported.
+
+| Model | Parallel | Calls/s | Median latency | Empty replies | Mean cost per call |
+|---|---|---|---|---|---|
+| deepseek-v4-flash (cap 256) | 32 | 8.4 | 3.2 s | 14 of 96 | about $0.00005 |
+| deepseek-v4-flash (cap 512 / 1024) | 8 | 4.9 / 4.0 | 1.3 / 1.6 s | 0 of 32 | about $0.00003-0.00006 |
+| qwen3.8-27b (cap 256) | 32 | 8.45 | 3.7 s | 29 of 32 | $0.00034 |
+| qwen3.8-27b (cap 1024) | 4 | 0.64 | 5.5 s | 3 of 8 | $0.0013 |
+| gemma-4-31b-it (cap 512) | 16 | 15.2 | 1.0 s | 0 of 32 | $0.000038 |
+| gemma-4-26b-a4b-it (cap 512) | 16 | 33.5 | 0.4 s | 0 of 32 | $0.000033 |
+
+Findings and rules:
+1. **Reasoning tokens are reported** (`usage.output_tokens_details.reasoning_tokens`) and every response carries a USD `cost`. The runner logs both per call and enforces the $150 soft cap from the metered cost, not from estimates.
+2. **qwen3.8-27b is a reasoning model**: it spends the whole output cap on thinking and returns empty text (29 of 32 at cap 256; 3 of 8 at cap 1024) at about 7x the estimated cost. By the 17.4 substitution rule (G1 failure, same cost class) the **mid hosted model becomes gemma-4-31b-it** (non-reasoning, 0 empty replies). qwen3.8-27b is dropped from the roster; this is a roster choice made on a pipeline-validity ground (empty replies), not on an outcome. Other roster entries unchanged: deepseek-v4-flash cheap, glm-5.2 large (not yet probed: G1 must check its empty-reply rate and cost before use; qwen3.5-397b is the fallback in the large class).
+3. **max_output_tokens = 512** (was 256): deepseek returned empty text at 256 for 15% of calls and 0 at 512. Empty replies are retried once (new sample index), logged, and the per-arm empty rate is reported.
+4. **Rate limits:** a burst of 96 + 96 calls in about 15 s returned 429 ("retry after 60 seconds", per user). The runner honours the 429 wait (60 s) with a global pause, never a per-episode retry storm; the 429 count is logged. It is not yet known whether the limit is shared across models.
+5. **Throughput:** 8-15 calls/s at 16-32 parallel, latency-bound, not a hard cap on deepseek; gemma is faster. The 10 calls/s trigger of 18.3 still applies and is measured again in the sprint G1.
+6. **Cost correction:** with gemma-4-31b-it as the mid model the confirmation estimate falls from about $95-105 to about $50-60 (deepseek about $20, gemma about $5, glm-5.2 unknown until probed, exploration and monitors about $15), with the metered cost as the authority.
+7. glm-5.2 context limit is 1,048,575 tokens (the 11_ADAPTION_API note said 786,432). `glm-53-flash` is on the docs list but not on this key: do not use it.
+8. Episode time: a 30-round episode takes at least 30 x (1-5 s) = 30-150 s even with parallel agent calls; hours tables in 16 and 18.3 assume parallel episodes in flight.
