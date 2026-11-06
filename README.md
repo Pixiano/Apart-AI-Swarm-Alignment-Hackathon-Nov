@@ -20,4 +20,4 @@ Entry workspace for the [Swarm Alignment Hackathon](https://apartresearch.com/sp
 The author is very curious and may introduce deviations from the plan during the sprint. Every deviation will be logged and clearly labelled, so planned and unplanned work stay easy to tell apart.
 
 ## Status
-Preparing. Nothing to run yet.
+Sprint running (started Fri 6 Nov 2026, 17:29 IST). Launch checks done (hosted API limits and local model server measured); building the instrument next. Nothing to run yet.

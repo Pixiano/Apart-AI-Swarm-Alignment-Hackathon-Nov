@@ -1,6 +1,6 @@
 # 16. Plan v3: the refinement fixes applied (2026-11-02, IST)
 
-Applies findings 1-37 of `14_PLAN_REFINEMENT.md`. **The scope cut is deliberately NOT applied** (owner: "we will see about the cut later"); Q4, the Gemma ladder and the extras stay, flagged as noted. Where this file and 01-13 disagree, **this file wins**. **Sections 17, 18, 19, 20 and 21 (audit fixes and measurements, 2026-11-06) win over every older line, including sections 1-16.**
+Applies findings 1-37 of `14_PLAN_REFINEMENT.md`. **The scope cut is deliberately NOT applied** (owner: "we will see about the cut later"); Q4, the Gemma ladder and the extras stay, flagged as noted. Where this file and 01-13 disagree, **this file wins**. **Sections 17 to 22 (audit fixes and measurements, 2026-11-06) win over every older line, including sections 1-16.**
 
 Owner answers (2026-11-02): the sprint starts **Fri 6 Nov 17:29 IST** (= Fri 00:00 AoE, so the sprint is 72 h, to Mon 9 Nov 17:29 IST); exams are over; **the instrument (engine) is built on Nov 6 only, nothing built before**; **the preregistration is written and tagged on Friday, before any run**; Q4 and the extras stay, plus a future-work paragraph; no local-only fallback.
 
@@ -387,3 +387,27 @@ Findings and rules:
 3. **Cost** is now far below the cap: deepseek about $1, qwen3.8-27b about $4, gemma-4-31b-it about $4, qwen3.5-397b about $7 at n=20 on 6 key cells (about $39 even at n=50 on 13 cells). Confirmation total is about $15-60 depending on whether large-model cells go to n=50, so the $150 cap is not binding. If prereg-v1 raises the large-model n from 20 to 50, that is a design change recorded there before any run.
 4. **Throughput** at 16 parallel is 15-21 calls/s on the cheap and mid models (latency about 1 s), above the 10 calls/s trigger; the sprint G1 still repeats the 32-parallel test and the 429 check (the earlier burst of 96 + 96 calls returned a 60 s per-user limit).
 5. The local server is run in "real" mode (port 8082, 4 slots) from `playground\serve.ps1`; the engine calls its chat-completions endpoint directly (never the web UI). Local numbers above are under GPU contention from a running game and are a floor.
+
+
+## 22. Hosted rate limit measured at sprint start (2026-11-06 17:33 IST; wins over 17.4, 18.3, 20, 21 on throughput and n)
+
+**Measured** (`bench/g1_limit.py`, `bench/g1_api.py`, results in `results/`): the API allows **100 requests per user per 60-second window, shared across all models**. A cold burst of 200 gave 100 OK then 429 ("retry after 60 seconds", header `retry-after: 60`); further bursts 10 s and 40 s later were fully blocked; a burst 70 s later passed in full. Short bursts therefore showed 8-23 calls/s, but the sustained rate is **100/min = 1.67 calls/s = 6,000 calls/h**. The docs publish no limit, no per-plan figure and no procedure to raise it. An email to the provider asking for a higher limit is the owner's to send; the plan does not depend on an answer.
+
+**Consequences.**
+1. Calls per N=10 episode = 172 (150 + 15% retries), so hosted throughput is about **35 episodes/h** across all hosted models together. Over about 36 usable hours (Sat 01:00 to Sun 13:00) that is about 1,250 episodes; the 16.3 and 18.4 totals (about 490k calls, about 82 h) do not fit.
+2. The runner uses one global limiter for all hosted calls: at most 95 requests in any sliding 60 s window (margin of 5), never a burst above that; on any 429 it pauses all hosted calls for 60 s; 429 responses are logged and not retried per episode. Episodes in flight beyond about 4 add nothing (the limiter is the bottleneck); local episodes run in parallel with hosted ones (different resource).
+3. **Cut order applied (already pre-declared in 17.4 and 17.5): the n=100 contrasts are dropped**; the six pre-declared contrasts run at n=50 like the other key cells. No outcome data exists yet, so this is a feasibility cut made before any run.
+
+**Hosted allocation (episodes at N=10, 172 calls each).**
+| Block | Cells x n | Episodes | Calls | Hours at 6,000/h |
+|---|---|---|---|---|
+| deepseek-v4-flash confirmation | 13 x 50 | 650 | 111.8k | 18.6 |
+| qwen3.8-27b (mid) | 6 key cells x 20 | 120 | 20.6k | 3.4 |
+| qwen3.5-397b (large) | 6 key cells x 20 | 120 | 20.6k | 3.4 |
+| gemma-4-31b-it (cross-family) | 6 key cells x 20 | 120 | 20.6k | 3.4 |
+| exploration and G2 pilot (deepseek) | about 80 | 80 | 13.8k | 2.3 |
+| **Total** | | **1,090** | **187k** | **31 h** |
+Leaves about 5 h of margin in 36 h. Cost stays small (about $5-12 total on the 21 prices). The six key cells are neutral, hint generic, hint named, deny generic, deny named, sham (N=10, dose 2); the 13 deepseek cells add dose 5 for hint and deny (4), told, blind+hint, blind+neutral.
+**Local (no rate limit, free), in parallel with hosted:** minicpm5-2b and qwen3-8b at n=20 on every cell as in 18.4 (about 8 GPU hours); local is where extra n is cheap, so extra local replicates may be added before the 18.4 plan is exhausted (logged as a prereg-v1 choice, not a post-hoc one).
+**45-round extension (18 x1.5):** hosted load would become about 46 h and does not fit; if the extension fires, hosted n drops to 30 on the deepseek cells and 10 on the other three models, applied once to every arm; local is unaffected.
+**Gate G1 (revised):** pass = sustained 95/min for 5 minutes with zero 429 and empty-reply rate under 5% on deepseek; the 32-parallel burst test is retired.
