@@ -19,7 +19,21 @@ PLANS["g2hint"] = {**PLANS["g2"], "arms": [("hint_named", 5)], "seeds": range(21
 
 
 def jobs_for(plan, models):
+    if "cells" in plan:                      # confirmatory: seed outermost so a stopped run leaves every cell with equal n
+        return [dict(model=m, n=10, arm=c[0], dose=c[1], prompt=c[2], blind_one=c[3], seed=1000 + i)
+                for i in range(1, max(plan["n_by_model"][x] for x in models) + 1) for m in models if i <= plan["n_by_model"][m]
+                for c in (plan["cells"] if m in plan["full_cells"] else plan["key_cells"])]
     return [dict(model=m, n=plan["n"], arm=a, dose=d, seed=s) for m in models for s in plan["seeds"] for a, d in plan["arms"]]
+
+
+KEY = [("neutral", 0, "P-MAIN", False), ("hint_generic", 2, "P-MAIN", False), ("hint_named", 2, "P-MAIN", False),
+       ("deny_generic", 2, "P-MAIN", False), ("deny_named", 2, "P-MAIN", False), ("sham", 2, "P-MAIN", False)]
+EXTRA = [("hint_generic", 5, "P-MAIN", False), ("hint_named", 5, "P-MAIN", False), ("deny_generic", 5, "P-MAIN", False), ("deny_named", 5, "P-MAIN", False),
+         ("neutral", 0, "P-TOLD", False), ("hint_named", 2, "P-MAIN", True), ("neutral", 0, "P-MAIN", True)]
+# prereg v1 / prep/16 section 22: deepseek n=50 on all 13 cells; other hosted n=20 on the 6 key cells; local n=20 on all 13 cells; seeds 1001 and up
+PLANS["conf"] = {"hosted": ["deepseek-v4-flash", "qwen3.8-27b", "qwen3.5-397b", "gemma-4-31b-it"], "local": ["minicpm5-2b", "qwen3-8b"],
+                 "cells": KEY + EXTRA, "key_cells": KEY, "full_cells": ["deepseek-v4-flash", "minicpm5-2b", "qwen3-8b"],
+                 "n_by_model": {"deepseek-v4-flash": 50, "qwen3.8-27b": 20, "qwen3.5-397b": 20, "gemma-4-31b-it": 20, "minicpm5-2b": 20, "qwen3-8b": 20}}
 
 
 _LEDGER = threading.Lock()

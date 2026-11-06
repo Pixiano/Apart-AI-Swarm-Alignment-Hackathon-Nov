@@ -10,3 +10,5 @@ Rule: bug fixes and plumbing before the first pilot episode are logged here; aft
 | D-004 | 2026-11-06 evening | Added META event (arm, dose, seats, bot kinds, prompt hashes) at the start of every episode log; Budget class (soft 150 / hard 160 USD, persisted); budget stop aborts the episode | G0 items 5 and 10 | no | yes |
 | D-005 | 2026-11-06 22:20 | Budget enforcer counts API cost x1.05 (UPLIFT) | Dashboard read $2.79 vs ledger $2.69 (about 4-5% higher); owner asked for +5% on the total | no (accounting only) | yes |
 | D-006 | 2026-11-06 23:10 | UPLIFT raised from 1.05 to 1.15 | Dashboard $4.40 vs ledger raw $3.995 (+10%); owner asked for a 15% margin | no (accounting only) | yes |
+| D-007 | 2026-11-07 00:50 | Episode id now carries a tag for P-TOLD, blind and no-board cells (default cells unchanged) | told and blind cells would have shared the neutral cell id, which is in the cache key | no | yes (before any confirmatory call) |
+| D-008 | 2026-11-07 00:55 | Roster check after pilots (144 episodes): no change; G1 final passed (491 calls in 302 s, 0 429, 0 empty) | prereg v1.1b | no | yes |

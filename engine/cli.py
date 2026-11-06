@@ -18,7 +18,8 @@ def build_cfg(model, n, arm, dose, seed, prompt="P-MAIN", with_board=True, blind
     random.Random(f"{seed}-roles").shuffle(seats)
     llm_seats, bot_seats = sorted(seats[:N_LLM[n]]), sorted(seats[N_LLM[n]:])
     bots = {s: Bot(arm if i < dose else "neutral", seed, s) for i, s in enumerate(bot_seats)}
-    return {"arm": arm, "dose": dose, "episode": f"{model}-N{n}-{arm}{dose}-{seed}", "seed": seed, "n": n, "llm_seats": llm_seats, "bots": bots, "model": model,
+    tag = ("" if prompt == "P-MAIN" else "-" + prompt.split("-")[1].lower()) + ("-blind" if blind_one else "") + ("" if with_board else "-nobrd")   # distinct id per cell: it is in the cache key
+    return {"arm": arm, "dose": dose, "episode": f"{model}-N{n}-{arm}{dose}{tag}-{seed}", "seed": seed, "n": n, "llm_seats": llm_seats, "bots": bots, "model": model,
             "prompt": prompt, "cap": llm.MAX_OUT, "with_board": with_board, "blind": [llm_seats[0]] if blind_one else []}
 
 

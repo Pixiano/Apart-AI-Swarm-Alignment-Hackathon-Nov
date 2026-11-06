@@ -202,6 +202,19 @@ def test_batch_resume_and_stop():
     assert batch.run_jobs([dict(model="fake", n=5, arm="neutral", dose=0, seed=9)], fake, tempfile.mkdtemp(), 1, over, th.Event(), msgs.append) == []
 
 
+def test_confirmatory_plan():
+    from engine import batch
+    from engine.cli import build_cfg
+    p = batch.PLANS["conf"]
+    h, l = batch.jobs_for(p, p["hosted"]), batch.jobs_for(p, p["local"])
+    assert len(h) == 13 * 50 + 3 * 6 * 20 and len(l) == 2 * 13 * 20                   # prep/16 section 22 allocation
+    ids = [build_cfg(j["model"], j["n"], j["arm"], j["dose"], j["seed"], j["prompt"], True, j["blind_one"])["episode"] for j in h + l]
+    assert len(ids) == len(set(ids))                                                  # told/blind cells never share an id (the id is in the cache key)
+    assert min(j["seed"] for j in h + l) == 1001 and max(j["seed"] for j in h) == 1050  # confirmation seeds only
+    first = [j["seed"] for j in h[:30]]
+    assert first == sorted(first)                                                     # seed outermost: a stopped run leaves equal n per cell
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
