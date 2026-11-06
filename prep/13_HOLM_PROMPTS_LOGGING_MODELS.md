@@ -1,3 +1,5 @@
+> **2026-11-06:** prep/16 section 17 (audit fixes) wins on n per cell, gates, seats, game numbers, cache key and freeze dates; stale gate, date and n=20 lines in this file are void.
+
 > **2026-11-02 update:** the refinement fixes are applied in [16_PLAN_V3_FIXES_APPLIED.md](16_PLAN_V3_FIXES_APPLIED.md); where it disagrees with this file, 16 wins. Key changes: sprint starts Fri 6 Nov 17:29 IST (72 h to Mon 17:29 IST), engine built Nov 6 only, preregistration written and tagged Friday before any run, rule (d) withdrawn, new schedule and gates.
 
 # 13. Holm correction, prompt templates, logging, local model sweep, runbook

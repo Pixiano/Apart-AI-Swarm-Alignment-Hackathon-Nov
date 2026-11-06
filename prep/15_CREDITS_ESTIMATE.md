@@ -1,3 +1,5 @@
+> **2026-11-06:** prep/16 section 17 (audit fixes) wins on n per cell, gates, seats, game numbers, cache key and freeze dates; stale gate, date and n=20 lines in this file are void.
+
 # 15. Credits estimate for the plan as written, and whether more depth/episodes matter
 
 Drafted 2026-11-02 (IST). Reproduce with `15_credits_estimate.py` (same folder). Prices are the real Adaption list in 11. **Assumptions are marked; the three unknowns (reasoning tokens, rate limits, caching discount) can each move the answer by 2-4x, so re-run after the key arrives (about Nov 4-5).**

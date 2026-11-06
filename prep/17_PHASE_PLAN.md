@@ -1,3 +1,5 @@
+> **2026-11-06:** prep/16 section 17 (audit fixes) wins on n per cell, gates, seats, game numbers, cache key and freeze dates; stale gate, date and n=20 lines in this file are void.
+
 # 17. Phase-by-phase plan: from the paper review to submission
 
 Drafted 2026-11-02 (IST). Built on 16 (wins on details). Sprint: Fri 6 Nov 17:29 IST to Mon 9 Nov 17:29 IST (72 h). Headline: Q3 (what peers say), model size a factor. Spend cap $150. Standing rules in every phase: log everything (13 section 3), deviations log with dates, daily summary and disclosure log, no key in any file, one local model server at a time started in your own terminal, quote Windows paths.
