@@ -45,3 +45,6 @@ Hosted timing is still unmeasured (the key arrives by email about 1-2 days befor
 
 ## Update 2026-11-06 (API probes)
 Key works; models on the key: deepseek-v4-flash, qwen3.8-27b, gemma-4-31b-it, gemma-4-26b-a4b-it, qwen3.5-397b, glm-5.2 (glm-53-flash is NOT available). glm-5.2 context is 1,048,575. Usage reports reasoning tokens and a USD cost per call. qwen3.8-27b is a reasoning model (empty replies at caps up to 1024). See prep/16 section 20 for the measured table and rules.
+
+## Update 2026-11-06 (thinking off)
+Send reasoning effort none via extra_body={"reasoning": {"effort": "none"}} on every call (xhigh is the default; minimal is rejected). glm-5.2 returned 504 at 60 s on every call. See prep/16 section 21.

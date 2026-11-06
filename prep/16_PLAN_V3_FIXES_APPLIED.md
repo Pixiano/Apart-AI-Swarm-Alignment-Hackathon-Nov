@@ -1,6 +1,6 @@
 # 16. Plan v3: the refinement fixes applied (2026-11-02, IST)
 
-Applies findings 1-37 of `14_PLAN_REFINEMENT.md`. **The scope cut is deliberately NOT applied** (owner: "we will see about the cut later"); Q4, the Gemma ladder and the extras stay, flagged as noted. Where this file and 01-13 disagree, **this file wins**. **Sections 17, 18 and 19 (audit fixes, 2026-11-06) win over every older line, including sections 1-16.**
+Applies findings 1-37 of `14_PLAN_REFINEMENT.md`. **The scope cut is deliberately NOT applied** (owner: "we will see about the cut later"); Q4, the Gemma ladder and the extras stay, flagged as noted. Where this file and 01-13 disagree, **this file wins**. **Sections 17, 18, 19, 20 and 21 (audit fixes and measurements, 2026-11-06) win over every older line, including sections 1-16.**
 
 Owner answers (2026-11-02): the sprint starts **Fri 6 Nov 17:29 IST** (= Fri 00:00 AoE, so the sprint is 72 h, to Mon 9 Nov 17:29 IST); exams are over; **the instrument (engine) is built on Nov 6 only, nothing built before**; **the preregistration is written and tagged on Friday, before any run**; Q4 and the extras stay, plus a future-work paragraph; no local-only fallback.
 
@@ -364,3 +364,26 @@ Findings and rules:
 6. **Cost correction:** with gemma-4-31b-it as the mid model the confirmation estimate falls from about $95-105 to about $50-60 (deepseek about $20, gemma about $5, glm-5.2 unknown until probed, exploration and monitors about $15), with the metered cost as the authority.
 7. glm-5.2 context limit is 1,048,575 tokens (the 11_ADAPTION_API note said 786,432). `glm-53-flash` is on the docs list but not on this key: do not use it.
 8. Episode time: a 30-round episode takes at least 30 x (1-5 s) = 30-150 s even with parallel agent calls; hours tables in 16 and 18.3 assume parallel episodes in flight.
+
+
+## 21. Thinking switched off; roster revised (2026-11-06, pre-sprint probes; wins over section 20 and 17.4)
+
+**Finding.** Hosted reasoning models spent the output cap on thinking and returned empty text (20). The API accepts `reasoning: {"effort": "none"}` (via `extra_body`; "minimal" is rejected; `enable_thinking` and `thinking.type` do not switch it off). With it: 0 empty replies on every model tested, mean 9-13 output tokens, 0 reasoning tokens. Local models (llama-server) behave the same way: at a 512-token cap minicpm5-2b returned empty text on 6 of 8 calls and qwen3-8b on 5 of 7; with `chat_template_kwargs: {"enable_thinking": false}` per request, 0 of 6 empty on both.
+
+| Model | Parallel | Calls/s | Median latency | Empty | Mean cost per call |
+|---|---|---|---|---|---|
+| deepseek-v4-flash (thinking off) | 16 | 21.4 | 0.6 s | 0 of 32 | $0.000006 |
+| qwen3.8-27b (thinking off) | 16 | 15.3 | 1.0 s | 0 of 32 | $0.000033 |
+| qwen3.5-397b (thinking off) | 4 | 7.7 | 0.5 s | 0 of 8 | $0.00035 |
+| gemma-4-31b-it (no reasoning) | 16 | 15.2 | 1.0 s | 0 of 32 | $0.000038 |
+| gemma-4-26b-a4b-it (no reasoning) | 16 | 33.5 | 0.4 s | 0 of 32 | $0.000033 |
+| glm-5.2 | any | none | 504 gateway time-out at 60 s on every call (4 retries over about 40 minutes) | | |
+| minicpm5-2b local, 1 call at a time, thinking off | 1 | 15.7 | 0.06 s | 0 of 6 | local |
+| qwen3-8b local, 1 call at a time, thinking off, game running on the same GPU | 1 | 0.47 | 2.1 s | 0 of 6 | local |
+
+**Rules (supersede 20 items 2-3).**
+1. **Every LLM seat runs with thinking off** (hosted `reasoning.effort=none`; local `enable_thinking=false`), in all arms and all models. This is a fixed design choice: the study is about what peers say in chat, not about chain-of-thought. The report states it in Methods and Limitations (results may differ for reasoning-enabled agents). `max_output_tokens` stays 512 (a safety margin); the empty-reply retry (once, new sample index) and the per-arm empty rate stay.
+2. **Roster by cost class, revised on pipeline-validity grounds, not outcomes:** small local = minicpm5-2b, qwen3-8b; cheap hosted = deepseek-v4-flash; mid hosted = qwen3.8-27b; large hosted = qwen3.5-397b; cross-family check = gemma-4-31b-it (and optional gemma-4-26b-a4b-it). glm-5.2 is used only if it answers at the sprint G1 retry; otherwise it is dropped and the report says so. qwen3.8-27b and qwen3.5-397b form a same-family size pair (27B versus 397B), which makes the size comparison cleaner than before; it is still observational (other things differ), so size remains a descriptive table with no p-values.
+3. **Cost** is now far below the cap: deepseek about $1, qwen3.8-27b about $4, gemma-4-31b-it about $4, qwen3.5-397b about $7 at n=20 on 6 key cells (about $39 even at n=50 on 13 cells). Confirmation total is about $15-60 depending on whether large-model cells go to n=50, so the $150 cap is not binding. If prereg-v1 raises the large-model n from 20 to 50, that is a design change recorded there before any run.
+4. **Throughput** at 16 parallel is 15-21 calls/s on the cheap and mid models (latency about 1 s), above the 10 calls/s trigger; the sprint G1 still repeats the 32-parallel test and the 429 check (the earlier burst of 96 + 96 calls returned a 60 s per-user limit).
+5. The local server is run in "real" mode (port 8082, 4 slots) from `playground\serve.ps1`; the engine calls its chat-completions endpoint directly (never the web UI). Local numbers above are under GPU contention from a running game and are a floor.
