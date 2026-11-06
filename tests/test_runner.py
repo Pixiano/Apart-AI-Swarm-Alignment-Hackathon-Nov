@@ -175,6 +175,31 @@ def test_budget_and_meta():
     assert m["kind"] == "META" and m["arm"] == "hint_named" and m["dose"] == 1 and m["prompt"] == "P-MAIN" and "P-MAIN" in m["prompt_hashes"] and m["llm_seats"] == [1, 2, 3]
 
 
+
+
+def test_batch_resume_and_stop():
+    from engine import batch
+    from engine.llm import Budget
+    import threading as th
+    out = tempfile.mkdtemp(); calls = {"n": 0}
+    def fake(m, s, u, cap, ep, smp):
+        calls["n"] += 1
+        return {"text": "TAKE 1", "in": 1, "out": 1, "cost": 0.0, "reason": 0, "cached": False}
+    jobs = [dict(model="fake", n=5, arm="neutral", dose=0, seed=s) for s in (1, 2, 3)]
+    msgs = []
+    r = batch.run_jobs(jobs, fake, out, 2, Budget(None), th.Event(), msgs.append)
+    assert len(r) == 3 and calls["n"] == 3 * 90 and len(msgs) == 3
+    n0 = calls["n"]
+    r = batch.run_jobs(jobs, fake, out, 2, Budget(None), th.Event(), msgs.append)
+    assert len(r) == 3 and calls["n"] == n0                                   # resume: finished episodes are skipped, zero calls
+    ep = os.path.join(out, "fake-N5-neutral0-2")
+    os.remove(ep + ".summary.json")                                           # a crashed episode: partial log kept aside and rerun
+    batch.run_jobs(jobs, fake, out, 1, Budget(None), th.Event(), msgs.append)
+    assert os.path.exists(ep + ".partial") and os.path.exists(ep + ".summary.json") and calls["n"] == n0 + 90
+    over = Budget(None, soft=0.0, hard=1.0)                                   # soft cap reached: no new episode starts
+    assert batch.run_jobs([dict(model="fake", n=5, arm="neutral", dose=0, seed=9)], fake, tempfile.mkdtemp(), 1, over, th.Event(), msgs.append) == []
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
