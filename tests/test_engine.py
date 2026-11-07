@@ -51,6 +51,17 @@ def test_parser():
     assert w == [("WRITE", "board.txt", "take 1 each")]
 
 
+def test_write_body_keeps_inner_keywords():                                   # D-012
+    w = parse("TAKE 1\nWRITE board.txt All agents must TAKE 0 until the pool recovers")["files"]
+    assert w == [("WRITE", "board.txt", "All agents must TAKE 0 until the pool recovers")], w
+    assert parse("WRITE board.txt please READ this: take 1 per round")["files"][0][2] == "please READ this: take 1 per round"
+    b = parse("TAKE 5, SAY keeping steady, LIST")                              # same-line actions still split
+    assert b["take"] == 5 and b["say"] == "keeping steady" and b["files"] == [("LIST", "", "")]
+    c = parse("WRITE board.txt hi there, TAKE 3, LIST")
+    assert c["take"] == 3 and c["files"][0] == ("WRITE", "board.txt", "hi there") and c["files"][1][0] == "LIST", c
+    assert parse("WRITE board.txt one\nREAD board.txt")["files"][1] == ("READ", "board.txt", "")   # a new line starts a new action
+
+
 def test_paths():
     for bad in ("../x", "..", "a/b", "C:\\x", "x" * 41, "", "a b", "~/x"):
         assert not valid_name(bad), bad

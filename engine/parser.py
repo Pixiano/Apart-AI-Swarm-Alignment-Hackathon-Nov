@@ -22,7 +22,14 @@ def _segments(text):
     pos = {}
     for m in list(_UP.finditer(text)) + list(_LS.finditer(text)):
         pos[m.start(1)] = m.group(1).upper()
-    starts = sorted(pos)
+    starts, in_write = [], False
+    for s in sorted(pos):          # D-012: a keyword inside a WRITE body belongs to the message, unless it starts a line or follows , or ;
+        line_start = text.rfind("\n", 0, s) + 1
+        boundary = re.fullmatch(r"[ \t\-*>`'\"#]*", text[line_start:s]) or text[:s].rstrip(" \t").endswith((",", ";"))
+        if in_write and not boundary:
+            continue
+        starts.append(s)
+        in_write = pos[s] == "WRITE"
     for a, b in zip(starts, starts[1:] + [len(text)]):
         seg = text[a + len(pos[a]):b].split("\n")[0]
         yield pos[a], seg.strip(_TRIM)

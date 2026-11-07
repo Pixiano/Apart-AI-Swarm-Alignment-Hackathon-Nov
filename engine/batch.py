@@ -76,7 +76,9 @@ def run_jobs(jobs, call, out, workers, budget, stop, say=print):
         finally:
             log.close()
         s["llm_seats"], s["bot_seats"] = cfg["llm_seats"], sorted(cfg["bots"])
-        json.dump(s, open(base + ".summary.json", "w"), indent=1)
+        with open(base + ".summary.json.tmp", "w") as f:      # D-012: atomic
+            json.dump(s, f, indent=1)
+        os.replace(base + ".summary.json.tmp", base + ".summary.json")
         ledger(out, cfg["episode"], j["model"], base + ".jsonl")
         say(f"done {cfg['episode']} collapsed={s['collapsed']} read={s['first_llm_read_board']} write={s['first_llm_write_board']} spent=${budget.spent:.3f}")
         return s

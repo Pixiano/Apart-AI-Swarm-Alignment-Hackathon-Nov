@@ -90,7 +90,10 @@ class Budget:
         with self.lock:
             self.spent += cost * UPLIFT
             if self.path:
-                json.dump({"spent": round(self.spent, 6)}, open(self.path, "w"))
+                tmp = self.path + ".tmp"      # D-012: atomic, a kill mid-write must not break the restart
+                with open(tmp, "w") as f:
+                    json.dump({"spent": round(self.spent, 6)}, f)
+                os.replace(tmp, self.path)
 
 
 def budgeted(call, budget):
