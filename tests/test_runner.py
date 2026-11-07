@@ -181,7 +181,7 @@ def test_batch_resume_and_stop():
     from engine import batch
     from engine.llm import Budget
     import threading as th
-    out = tempfile.mkdtemp(); calls = {"n": 0}
+    out = os.path.join(tempfile.mkdtemp(), "run"); os.makedirs(out); calls = {"n": 0}   # costs.csv lands in the private parent, not in %TEMP%
     def fake(m, s, u, cap, ep, smp):
         calls["n"] += 1
         return {"text": "TAKE 1", "in": 1, "out": 1, "cost": 0.0, "reason": 0, "cached": False}

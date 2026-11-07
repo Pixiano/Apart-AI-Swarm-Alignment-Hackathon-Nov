@@ -13,7 +13,7 @@ for f in glob.glob(os.path.join(folder, "*.jsonl")):
         e = json.loads(line)
         if e["kind"] == "CALL":
             m = cost.setdefault(e.get("model"), [0, 0.0, 0])
-            m[0] += 1; m[1] += e["cost"]; m[2] += e["empty"]
+            m[0] += 1; m[1] += 0.0 if e.get("cached") else e["cost"]; m[2] += e["empty"]   # replayed (cached) calls were paid in an earlier run
 print(f"{'model':20} {'eps':>3} {'READ%':>6} {'WRITE%':>7} {'SUBST%':>7} {'collapse%':>9} {'calls':>6} {'empty%':>7} {'cost$':>7}")
 for m in sorted({r["model"] for r in rows}):
     r = [x for x in rows if x["model"] == m]

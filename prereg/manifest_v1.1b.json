@@ -1,0 +1,74 @@
+{
+ "tag": "prereg-v1.1b",
+ "frozen": "2026-11-07 before the first confirmatory call",
+ "analysis_script_sha256": "45f17fb0c1ecbd87cd093fa65e8048b30265f3c06603c64f4ea3f0067e29bc3d",
+ "file_sha256": {
+  "bench/g1_sustained.py": "c75251eb6b884108a28c900aad175d7bf20a624bf6b152c15bb248b8d7f96d57",
+  "engine/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "engine/analysis.py": "45f17fb0c1ecbd87cd093fa65e8048b30265f3c06603c64f4ea3f0067e29bc3d",
+  "engine/batch.py": "af7ced8697528470435f347f3c7c245c81c9f21647ed341bf2113c86a7447e9a",
+  "engine/bots.py": "0618653a8e2db4baff6abaf07ebe90f8d6c8eae61967744371b959a648fdc172",
+  "engine/cli.py": "10ac2d7243debdea2e5b279701dc3ebed05ff36705e7a499ffda78474277f6d5",
+  "engine/game.py": "889b5d95d7a09cbe6ac5d505555d67e55ded31ec70ae7be5a62b955bb16e62b6",
+  "engine/hashes.py": "48153d4ba0d45ec476542065bbb6565a6d0a06d0c753eaac34968d0ada414ad8",
+  "engine/llm.py": "f851d08ed9e5b92282229d3073c1ffac2846be1d0a69ae7d07e983f668034e5c",
+  "engine/logger.py": "956e9bc24c82fcc2dcf1deb0812237993ab572c494c2d361e8bfc1322833c386",
+  "engine/parser.py": "1ccaedef647697af05bc27e4b8fb6d61c58542f55889efe4449fed43a70f9c7d",
+  "engine/prompts.py": "918cc1604fa4c85884f187deea0306ebb780bd2c1d75986221bfdba86b0ffb85",
+  "engine/runner.py": "e0b955cf08c7d0c26f0e1179987cada04a6a1585b83b740b94b9e60ee0a1c8f7",
+  "engine/world.py": "69d35cabbdc0bd0a320a1f10f4e55e914c80d9fb7cf114206a003c2cab45c324",
+  "tests/test_analysis.py": "d6299e6970dad0785f1aa3ce00f44fa795ddc0183809637b3f854803eaee233e",
+  "tests/test_bots.py": "a29335e50d35270c77568e13943d343c87abd16f49b1b5d027886c0166ba53ff",
+  "tests/test_engine.py": "49cde923ebf590c60c13a51ddf4ead472d56145c7852412b4a224d4afa00fe0e",
+  "tests/test_runner.py": "3a5c68d6c9f5c0a87806131c5334f20e2749ff9ba69591cc76ae3c38f6c170f9"
+ },
+ "roster": {
+  "hosted": {
+   "deepseek-v4-flash": "n=50 on 13 cells",
+   "qwen3.8-27b": "n=20 on 6 key cells",
+   "qwen3.5-397b": "n=20 on 6 key cells",
+   "gemma-4-31b-it": "n=20 on 6 key cells"
+  },
+  "local": {
+   "minicpm5-2b": "n=20 on 13 cells",
+   "qwen3-8b": "n=20 on 13 cells"
+  },
+  "dropped": [
+   "glm-5.2 (504 on every call)",
+   "glm-53-flash (not on key)"
+  ]
+ },
+ "settings": {
+  "temperature": 0.7,
+  "max_output_tokens": 512,
+  "thinking": "off (hosted reasoning effort none; local enable_thinking false)",
+  "rounds": 30,
+  "N": 10,
+  "llm_seats": 5,
+  "bot_seats": 5,
+  "seeds": "1001 and up, seed outermost",
+  "limiter": "95 requests per 60 s, 429 pauses 60 s",
+  "budget_markup": 1.15,
+  "caps_usd": {
+   "soft": 150,
+   "hard": 160
+  }
+ },
+ "cells": {
+  "key6": "neutral, hint_generic d2, hint_named d2, deny_generic d2, deny_named d2, sham d2",
+  "extra7": "hint/deny generic/named d5 (4), told (P-TOLD), blind+hint_named d2, blind+neutral"
+ },
+ "gates": {
+  "G0": "tests pass (4 files)",
+  "G1": {
+   "seconds": 302,
+   "calls": 491,
+   "per_min": 97.5,
+   "n429": 0,
+   "empty": 0,
+   "errors": 0,
+   "pass": true
+  },
+  "G2": "pilots: neutral READ ~0, named hint READ 38-100%, generic hint 0-100% by model, denials 0% substantive WRITE; floor branch not triggered; P-MAIN kept; roster unchanged"
+ }
+}

@@ -68,6 +68,35 @@ def test_pipeline_from_event_logs():
     assert rows["b"]["y"] == 0 and rows["b"]["wrote_any"] == 1                            # wrote, but not substantive: primary outcome is 0
 
 
+def test_p_reproducible_across_processes():                                              # D-011: set order used to change p per process
+    import subprocess
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    code = ("import sys; sys.path.insert(0, %r); from engine import analysis as A; import random\n"
+            "rng = random.Random(7); rows = [{'model': m, 'arm': a, 'y': int(rng.random() < p)} for m in 'abcde' for a, p in (('neutral', .2), ('hint_named', .5)) for _ in range(20)]\n"
+            "print(A.contrast(rows, 'hint_named', 'neutral')['p'])" % root)
+    out = {subprocess.run([sys.executable, "-I", "-c", code], capture_output=True, text=True).stdout.strip() for _ in range(4)}
+    assert len(out) == 1 and "" not in out, out
+
+
+def test_degenerate_cells_cannot_claim_a_null_at_tiny_n():                              # D-011: zero-width bootstrap interval
+    rows = [{"model": "m", "arm": a, "y": 0} for a in ("neutral", "sham", "hint_generic", "hint_named", "deny_generic", "deny_named")]
+    r = A.q3_report(rows)
+    assert not any(c["null_claim"] for c in r["q3"]) and not r["sham"]["equivalent"], r      # n=1 per cell: Newcombe interval is wide
+    big = [{"model": "m", "arm": a, "y": 0} for a in ("neutral", "sham", "deny_generic") for _ in range(100)]
+    c = {x["arm"]: x for x in A.q3_report(big)["q3"]}["deny_generic"]
+    assert c["null_claim"], c                                                              # n=100 per cell, all zero: a null claim is fine
+
+
+def test_empty_arm_and_incomplete_episodes():                                            # D-011
+    c = A.contrast([{"model": "m", "arm": "neutral", "y": 1}], "hint_named", "neutral")
+    assert c["p"] == 1.0 and c["est"] != c["est"], c                                       # NaN estimate, p = 1, no claim
+    d = tempfile.mkdtemp()
+    ev = [{"kind": "META", "episode": "x", "model": "m", "arm": "neutral", "dose": 0, "n": 5, "prompt": "P-MAIN", "llm_seats": [1], "rounds": 4}]
+    ev += [{"kind": "POOL", "round": r, "collapsed": False} for r in (1, 2)]               # only 2 of 4 rounds: in flight or aborted
+    open(os.path.join(d, "x.jsonl"), "w").write("\n".join(__import__("json").dumps(e) for e in ev))
+    assert A.load_rows(d) == [], "incomplete episode must be skipped"
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

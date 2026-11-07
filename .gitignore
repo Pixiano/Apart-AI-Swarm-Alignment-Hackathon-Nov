@@ -32,3 +32,4 @@
 !bench/*.py
 !prereg/
 !prereg/*.md
+!prereg/*.json

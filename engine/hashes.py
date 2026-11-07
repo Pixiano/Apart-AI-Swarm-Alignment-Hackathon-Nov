@@ -23,5 +23,7 @@ def manifest():
 if __name__ == "__main__":
     m = manifest()
     print(json.dumps(m, indent=1))
-    if "--write" in sys.argv:
-        json.dump(m, open(os.path.join(ROOT, "prereg", "hashes_v1.1a.json"), "w"), indent=1)
+    out = os.path.join(ROOT, "prereg", "hashes_v1.1a.json")
+    if "--write" in sys.argv and not os.path.exists(out):   # D-011: the frozen manifest is never overwritten
+        with open(out, "w") as f:
+            json.dump(m, f, indent=1)

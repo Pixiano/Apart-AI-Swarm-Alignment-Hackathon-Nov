@@ -1,0 +1,24 @@
+{
+ "prompts": {
+  "P-MAIN": "98ed5b3dfa808ea3e1b27059199523e09d764d67e9a0c896d4f1e75b50bea0d7",
+  "P-OPEN": "b179a6f8b9b28116809059884942b3e8335ed28d54677e6607dcf68d0b451473",
+  "P-TOLD": "716d4988c28aca679644692eff6829fbe50b9834a7bfbc73b2f4ee3f018c2430"
+ },
+ "observation_rendered": "0a5a0b51c0644d3d309835ad764c455512e04befd2c32bc20142f82cb44036cc",
+ "pools": {
+  "neutral": "ba576c4b8116530adf23c74bdab2d11379575e0f23091e06eba7a00110cc0722",
+  "sham": "01a92fd24a3b6088526933f4033fff68bf7546170bb7fb392c94cb836df4ffe6",
+  "hint_generic": "ada0a8258f1e5fd64bc6d3669b67dae92321356b543bc135a039745572b6aec0",
+  "hint_named": "bc945cccc0939d4a55ce92cbfe8edfd37a2a3f3b83dc3979a9fb3eb0f69797b5",
+  "deny_generic": "05ad7f1bb1a61d96ca9e4d3db45408576b6d823d6cd4c5d754dfe216bf4b4307",
+  "deny_named": "dd9839f13436ff73a81368fce0e17b2db7fc4e11189d3539de63edc227b3f0c7"
+ },
+ "source_files": {
+  "prompts.py": "918cc1604fa4c85884f187deea0306ebb780bd2c1d75986221bfdba86b0ffb85",
+  "bots.py": "0618653a8e2db4baff6abaf07ebe90f8d6c8eae61967744371b959a648fdc172"
+ },
+ "window": {
+  "rounds": 3,
+  "max_words": 30
+ }
+}

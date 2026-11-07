@@ -32,7 +32,9 @@ def load_rows(folder):
     rows = []
     for f in sorted(glob.glob(os.path.join(folder, "*.jsonl"))):
         ev = [json.loads(x) for x in open(f, encoding="utf-8")]
-        if any(e["kind"] == "META" for e in ev):
+        meta = next((e for e in ev if e["kind"] == "META"), None)
+        # D-011: skip in-flight or budget-aborted episodes (fewer POOL rounds than planned)
+        if meta and max((e["round"] for e in ev if e["kind"] == "POOL"), default=0) >= meta["rounds"]:
             rows.append(episode_rows(ev))
     return rows
 
@@ -44,7 +46,7 @@ def _split(rows, arm):
 
 def rd(a, b):
     num = den = 0.0
-    for s in {x for x, _ in a} & {x for x, _ in b}:
+    for s in sorted({x for x, _ in a} & {x for x, _ in b}):   # D-011: sorted, bit-identical sums
         ya, yb = [y for t, y in a if t == s], [y for t, y in b if t == s]
         w = len(ya) * len(yb) / (len(ya) + len(yb))
         num += w * (statistics.mean(ya) - statistics.mean(yb))
@@ -68,7 +70,7 @@ def _boot(a, b, level, rng):
 
 def _perm_p(a, b, rng):
     obs = abs(rd(a, b))
-    strata = {s for s, _ in a} & {s for s, _ in b}
+    strata = sorted({s for s, _ in a} & {s for s, _ in b})   # D-011: set order made p differ per process
     cnt = 0
     for _ in range(B):
         pa, pb = [], []
@@ -91,12 +93,32 @@ def holm(ps):
     return adj
 
 
+def newcombe(a, b, level=0.90):
+    """D-011: Newcombe (method 10, Wilson-based) interval for the POOLED risk difference a - b. Unlike the percentile bootstrap it never
+    collapses to zero width when a cell is all 0 or all 1, so a null claim cannot rest on a degenerate interval."""
+    z = statistics.NormalDist().inv_cdf(1 - (1 - level) / 2)
+
+    def wilson(x, n):
+        p = x / n
+        c = (p + z * z / (2 * n)) / (1 + z * z / n)
+        h = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / (1 + z * z / n)
+        return p, c - h, c + h
+    if not a or not b:
+        return (float("nan"), float("nan"))
+    p1, l1, u1 = wilson(sum(y for _, y in a), len(a))
+    p2, l2, u2 = wilson(sum(y for _, y in b), len(b))
+    d = p1 - p2
+    return (d - ((p1 - l1) ** 2 + (u2 - p2) ** 2) ** 0.5, d + ((u1 - p1) ** 2 + (p2 - l2) ** 2) ** 0.5)
+
+
 def contrast(rows, arm, ref, level=0.95):
     rng = random.Random(SEED)
     a, b = _split(rows, arm), _split(rows, ref)
     lo, hi = _boot(a, b, level, rng)
     lo90, hi90 = _boot(a, b, 0.90, rng)
-    return {"arm": arm, "ref": ref, "n_a": len(a), "n_b": len(b), "est": rd(a, b), "ci_holm_level": (lo, hi), "ci90": (lo90, hi90), "p": _perm_p(a, b, rng)}
+    p = _perm_p(a, b, rng) if a and b else 1.0     # D-011: an empty arm gets p = 1 (was 1/(B+1)), est is NaN, no claim
+    return {"arm": arm, "ref": ref, "n_a": len(a), "n_b": len(b), "est": rd(a, b), "ci_holm_level": (lo, hi), "ci90": (lo90, hi90),
+            "ci90_newcombe": newcombe(a, b), "p": p}
 
 
 def q3_report(rows):
@@ -104,7 +126,8 @@ def q3_report(rows):
     for c, ph in zip(res, holm([c["p"] for c in res])):
         c["p_holm"] = ph
         c["claim"] = bool(ph < 0.05 and (c["ci_holm_level"][0] > 0 or c["ci_holm_level"][1] < 0))
-        c["null_claim"] = bool(c["ci90"][0] >= -0.30 and c["ci90"][1] <= 0.30)
+        c["null_claim"] = bool(c["ci90"][0] >= -0.30 and c["ci90"][1] <= 0.30 and c["ci90_newcombe"][0] >= -0.30 and c["ci90_newcombe"][1] <= 0.30)   # D-011: both intervals must sit inside
     sh = contrast(rows, "sham", "neutral", 0.90)
-    sh["equivalent"] = bool(abs(sh["est"]) <= 0.10 and sh["ci90"][0] >= -0.30 and sh["ci90"][1] <= 0.30)
+    sh["equivalent"] = bool(abs(sh["est"]) <= 0.10 and sh["ci90"][0] >= -0.30 and sh["ci90"][1] <= 0.30
+                            and sh["ci90_newcombe"][0] >= -0.30 and sh["ci90_newcombe"][1] <= 0.30)
     return {"q3": res, "sham": sh}
