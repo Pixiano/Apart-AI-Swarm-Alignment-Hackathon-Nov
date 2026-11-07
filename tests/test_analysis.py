@@ -46,6 +46,15 @@ def test_low_power_gives_no_null_claim():
     assert not c["claim"] and not c["null_claim"], c                                     # n=8: interval too wide to claim a null
 
 
+def test_told_and_blind_cells_stay_out_of_q3():
+    base = synth({"hint_named": 0.6, "hint_generic": 0.2, "deny_named": 0.2, "deny_generic": 0.2})
+    extra = [{"model": "m1", "arm": "neutral", "y": 1, "prompt": "P-TOLD", "blind": 0} for _ in range(50)] \
+          + [{"model": "m1", "arm": "hint_named", "y": 0, "prompt": "P-MAIN", "blind": 1} for _ in range(50)]
+    a = {c["arm"]: c["est"] for c in A.q3_report(base)["q3"]}
+    b = {c["arm"]: c["est"] for c in A.q3_report(base + extra)["q3"]}
+    assert a == b, (a, b)                                                               # told (all successes) and blind rows change nothing
+
+
 def test_pipeline_from_event_logs():
     d = tempfile.mkdtemp()
     def agent(text):

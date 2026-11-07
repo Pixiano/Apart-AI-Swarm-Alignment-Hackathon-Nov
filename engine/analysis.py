@@ -22,7 +22,7 @@ def episode_rows(events):
     r = [e for e in events if e["kind"] == "READ" and e["seat"] in llm and e.get("is_board")]
     sw = [e for e in w if substantive(e.get("text"))]
     pools = [e for e in events if e["kind"] == "POOL"]
-    return {"episode": meta["episode"], "model": meta["model"], "arm": meta["arm"], "dose": meta["dose"], "n": meta["n"], "prompt": meta["prompt"],
+    return {"episode": meta["episode"], "model": meta["model"], "arm": meta["arm"], "dose": meta["dose"], "n": meta["n"], "prompt": meta["prompt"], "blind": int(bool(meta.get("blind"))),
             "y": int(bool(sw)), "wrote_any": int(bool(w)), "read_any": int(bool(r)), "first_read": min((e["round"] for e in r), default=None),
             "first_write": min((e["round"] for e in sw), default=None), "share_writers": len({e["seat"] for e in sw}) / max(1, len(llm)),
             "collapsed": int(any(e["collapsed"] for e in pools)), "empty_calls": sum(1 for e in events if e["kind"] == "CALL" and e["empty"])}
@@ -38,7 +38,8 @@ def load_rows(folder):
 
 
 def _split(rows, arm):
-    return [(r["model"], r["y"]) for r in rows if r["arm"] == arm]
+    # Q3 headline cells only: told (P-TOLD) and chat-blind cells are separate cells in the prereg and must not enter the neutral or hint groups
+    return [(r["model"], r["y"]) for r in rows if r["arm"] == arm and r.get("prompt", "P-MAIN") == "P-MAIN" and not r.get("blind")]
 
 
 def rd(a, b):
