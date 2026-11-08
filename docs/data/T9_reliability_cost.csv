@@ -1,0 +1,7 @@
+model,episodes,llm_take_events,empty_calls,episodes_with_empty,empty_per_1000_calls,n_no_take,n_bad_take,n_empty_write,n_bad_path,n_empty_reply,no_take_per_1000_takes,bad_take_per_1000_takes,empty_write_per_1000_takes,bad_path_per_1000_takes,empty_reply_per_1000_takes,costs_csv_conf_rows,costs_csv_conf_usd,usd_per_episode,costs_csv_calls,calls_in_logs,usd_from_log_CALL_events
+deepseek-v4-flash,650,97500,5,5,0.0513,20,16,0,0,0,0.2051,0.1641,0.0,0.0,0.0,650,3.9746,0.0061,97505,97505,3.9847
+qwen3.8-27b,120,18000,45,29,2.4954,131,0,0,4,12,7.2778,0.0,0.0,0.2222,0.6667,120,1.797,0.015,18033,18033,1.8323
+qwen3.5-397b,120,18000,0,0,0.0,0,1,0,3,0,0.0,0.0556,0.0,0.1667,0.0,120,13.8786,0.1157,18000,18000,13.8785
+gemma-4-31b-it,120,18000,280,70,15.4194,131,0,0,0,121,7.2778,0.0,0.0,0.0,6.7222,120,1.4889,0.0124,18159,18159,1.5282
+minicpm5-2b,260,39000,0,0,0.0,10331,789,27,237,0,264.8974,20.2308,0.6923,6.0769,0.0,260,0.0,0.0,39000,39000,0
+qwen3-8b,260,39000,0,0,0.0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,260,0.0,0.0,39000,39000,0

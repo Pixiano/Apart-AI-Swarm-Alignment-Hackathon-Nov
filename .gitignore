@@ -44,3 +44,6 @@
 !.gitattributes
 !bench/README.md
 !docs/*.pdf
+!docs/data/
+!docs/data/*.csv
+!LICENSE

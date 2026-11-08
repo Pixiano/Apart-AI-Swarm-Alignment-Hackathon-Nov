@@ -4,7 +4,7 @@ A pre-registered study of scripted-peer speech in a 10-seat commons game. Entry 
 
 ## Summary
 
-**Read the report:** [`docs/report_v1_draft.pdf`](docs/report_v1_draft.pdf) (main text, v1 draft) and [`docs/supplement.pdf`](docs/supplement.pdf) (appendices B-I: papers reviewed, prompts, design, deviations, extra figures, reliability and cost) and [`docs/slides.pdf`](docs/slides.pdf) (slide deck).
+**Read the report:** [`docs/report.pdf`](docs/report.pdf) (main text) and [`docs/supplement.pdf`](docs/supplement.pdf) (appendices B-I: papers reviewed, prompts, design, deviations, extra figures, reliability and cost) and [`docs/slides.pdf`](docs/slides.pdf) (slide deck).
 
 Ten seats share a depleting pool. Five seats are LLM agents and five are scripted peers whose chat lines differ by arm: neutral, sham (placebo chatter), hint (points to a shared file), or denial (says there is nothing useful to find). A shared file, `board.txt`, exists in the agents' file tree but is never named in the task prompt. The outcome is whether an LLM seat makes a substantive write (a quota-style rule with a number) to that file. We ran 1,530 confirmatory episodes across 6 models (4 hosted, 2 local). A **named hint** (a peer names the file) raised the share of episodes with a substantive board write by **+0.456** (risk difference versus neutral), a **generic hint** (a peer says only that a shared file exists) by **+0.080**. Denials and sham peers had no detectable effect. The full analysis, limitations and a post hoc section are in the report.
 
@@ -18,7 +18,7 @@ Ten seats share a depleting pool. Five seats are LLM agents and five are scripte
 | The pre-registration, deviations log and hash manifests (`prereg/`) | Any API key. |
 | Planning notes (`prep/`, indexed in `docs/INDEX.md`) | |
 
-**Getting the data.** The confirmatory logs are `[data location: owner to fill, e.g. a release asset or archive DOI]`. To regenerate instead, run the batch plan below (hosted episodes cost money and need a key; a fresh run will not reproduce the same replies, only the same design). Every figure and table in the report is computed from the episode logs in `results/conf`, using `engine/analysis.py` and the summary tools in `bench/`.
+**Getting the data.** The confirmatory logs are the tables in `docs/data/` (CSV, one per figure or table in the report); the raw per-episode logs and cached model replies are not in the repository, so open an issue to request them. To regenerate instead, run the batch plan below (hosted episodes cost money and need a key; a fresh run will not reproduce the same replies, only the same design). Every figure and table in the report is computed from the episode logs in `results/conf`, using `engine/analysis.py` and the summary tools in `bench/`.
 
 ## Repository layout
 
@@ -40,7 +40,7 @@ Requirements: Python 3.10 (the version everything below was tested on; the code 
 
 ```
 git clone https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov
-cd [repository folder]
+cd Apart-AI-Swarm-Alignment-Hackathon-Nov
 python -I -B tests/test_engine.py
 python -I -B tests/test_bots.py
 python -I -B tests/test_runner.py
@@ -159,12 +159,12 @@ Everything above and the remaining known issues are detailed in `prereg/DEVIATIO
 
 ## Citing
 
-See `CITATION.cff`. Placeholder: `[Author]. [Title]. [Year]. [repository URL or archive DOI].`
+See `CITATION.cff`. Kumar, V. (2026). A Hint From a Peer, Not an Instruction: What Makes LLM Agents Open an Unannounced Shared File. https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov
 
 ## Contact
 
-[contact]
+vatsal8599@gmail.com
 
 ## Licence
 
-[licence: owner to choose]
+MIT, see `LICENSE`.

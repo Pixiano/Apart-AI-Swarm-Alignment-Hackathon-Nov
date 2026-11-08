@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this software or data, please cite it as below."
-title: "[Title: owner to confirm]"
+title: "A Hint From a Peer, Not an Instruction: What Makes LLM Agents Open an Unannounced Shared File"
 type: software
 authors:
   - family-names: "Kumar"
     given-names: "Vatsal"
-version: "[version or tag, e.g. submitted]"
-date-released: "[YYYY-MM-DD]"
+version: "v1"
+date-released: "2026-11-08"
 repository-code: "https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov"
-license: "[SPDX licence id: owner to choose]"
+license: "MIT"
 abstract: "A pre-registered study of whether scripted peer speech (neutral, sham, hint, denial) changes whether LLM agents read and write an unannounced shared file in a 10-seat commons game; 1,530 confirmatory episodes across 6 models."
 keywords:
   - multi-agent systems

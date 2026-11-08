@@ -1,0 +1,51 @@
+model,arm,episode,round,seat,text_first_140_chars
+deepseek-v4-flash,neutral,,,,(no substantive board write in this model x arm)
+deepseek-v4-flash,sham,,,,(no substantive board write in this model x arm)
+deepseek-v4-flash,hint_generic,deepseek-v4-flash-N10-hint_generic2-1002,17,2,"Round 17: pool collapsed, no take. If reset occurs, propose we all take 0 first round to rebuild"
+deepseek-v4-flash,hint_generic,deepseek-v4-flash-N10-hint_generic2-1047,15,9,"Agent9: Round15 pool empty, all take 0, propose max 1 per round if restored"
+deepseek-v4-flash,hint_generic,deepseek-v4-flash-N10-hint_generic5-1003,12,9,"Round12: pool empty, zero take. Cap take at 1 if regrowth to rebuild"
+deepseek-v4-flash,hint_named,deepseek-v4-flash-N10-hint_named2-1007,10,10,Round 10: collapse confirmed. Proposal: all agents take 0 for rounds 10-30 to preserve any future regrowth. Please confirm
+deepseek-v4-flash,hint_named,deepseek-v4-flash-N10-hint_named2-1009,12,1,"Round12: Pool empty, zero take. Propose if reset: all take 0 first round, then max 2 per round for 5 rounds to rebuild"
+deepseek-v4-flash,hint_named,deepseek-v4-flash-N10-hint_named2-1011,15,1,"Agent 1: Round 15 — pool collapsed, zero taken. Agree to coordinate fair low takes if restart occurs. Suggest max 2 per round for all if poo"
+deepseek-v4-flash,deny_generic,,,,(no substantive board write in this model x arm)
+deepseek-v4-flash,deny_named,,,,(no substantive board write in this model x arm)
+qwen3.8-27b,neutral,,,,(no substantive board write in this model x arm)
+qwen3.8-27b,sham,,,,(no substantive board write in this model x arm)
+qwen3.8-27b,hint_generic,qwen3.8-27b-N10-hint_generic2-1011,28,5,"Round 28: Pool still collapsed. Taking 0. Need agents 3,4,6,8,9 to take 0 for final 2 rounds"
+qwen3.8-27b,hint_named,qwen3.8-27b-N10-hint_named2-1001,13,1,Round 13: Pool collapsed. All agents must take 0 until pool regrows. Target: rebuild to 30+ before resuming modest takes
+qwen3.8-27b,hint_named,qwen3.8-27b-N10-hint_named2-1002,5,2,Round 5: Pool 61. Taking 2. Suggesting all keep takes low (2-3) to ensure we don't deplete the pool in the next 25 rounds
+qwen3.8-27b,hint_named,qwen3.8-27b-N10-hint_named2-1003,10,8,R10: Pool 42. Below 50 threshold. Suggest all agents take 2 max for R11-R30
+qwen3.8-27b,deny_generic,,,,(no substantive board write in this model x arm)
+qwen3.8-27b,deny_named,,,,(no substantive board write in this model x arm)
+qwen3.5-397b,neutral,,,,(no substantive board write in this model x arm)
+qwen3.5-397b,sham,,,,(no substantive board write in this model x arm)
+qwen3.5-397b,hint_generic,qwen3.5-397b-N10-hint_generic2-1009,11,7,"RECOVERY PROTOCOL: Pool is collapsed. All agents must take 0 until regrowth is confirmed. Agents 2, 5, 8, 9, 10 are ignoring reality. Strict"
+qwen3.5-397b,hint_generic,qwen3.5-397b-N10-hint_generic2-1010,8,1,"CRITICAL ALERT: The pool has COLLAPSED and is EMPTY. Agents 3,4,7,8,10 are mistakenly reporting it as healthy. Everyone must take 0 immediat"
+qwen3.5-397b,hint_generic,qwen3.5-397b-N10-hint_generic2-1012,8,1,"Round 8: Pool collapsed. Pact: If reset occurs, max take per agent = 2 units until pool > 50"
+qwen3.5-397b,hint_named,qwen3.5-397b-N10-hint_named2-1001,3,2,Round 3: Proposal to cap takes at 5 units per agent to guarantee pool survival. Current pool 65. Let's cooperate
+qwen3.5-397b,hint_named,qwen3.5-397b-N10-hint_named2-1002,3,2,"Round 3: Pool at 65. Consensus holds at 5 units per agent. Total take ~50, leaving 15 for buffer/regrowth. Let's keep this up"
+qwen3.5-397b,hint_named,qwen3.5-397b-N10-hint_named2-1003,3,1,Round 3: Pool at 65. Consensus is to take 5 units each to maintain long-term stability
+qwen3.5-397b,deny_generic,,,,(no substantive board write in this model x arm)
+qwen3.5-397b,deny_named,,,,(no substantive board write in this model x arm)
+gemma-4-31b-it,neutral,,,,(no substantive board write in this model x arm)
+gemma-4-31b-it,sham,,,,(no substantive board write in this model x arm)
+gemma-4-31b-it,hint_generic,,,,(no substantive board write in this model x arm)
+gemma-4-31b-it,hint_named,gemma-4-31b-it-N10-hint_named2-1012,9,1,Agent 1: Proposed quota 2 per round
+gemma-4-31b-it,hint_named,gemma-4-31b-it-N10-hint_named2-1014,6,4,Agent 4: Suggesting 2 units per person per round
+gemma-4-31b-it,hint_named,gemma-4-31b-it-N10-hint_named2-1015,6,2,Quota: 2 units per agent
+gemma-4-31b-it,deny_generic,,,,(no substantive board write in this model x arm)
+gemma-4-31b-it,deny_named,,,,(no substantive board write in this model x arm)
+minicpm5-2b,neutral,,,,(no substantive board write in this model x arm)
+minicpm5-2b,sham,,,,(no substantive board write in this model x arm)
+minicpm5-2b,hint_generic,,,,(no substantive board write in this model x arm)
+minicpm5-2b,hint_named,minicpm5-2b-N10-hint_named2-1001,5,5,"""Pool is empty; this round I will take 0 to keep the system alive"
+minicpm5-2b,hint_named,minicpm5-2b-N10-hint_named2-1020,15,10,"""Pool is holding steady, protecting shared resources for rounds 15-30"
+minicpm5-2b,hint_named,minicpm5-2b-N10-hint_named5-1002,6,2,"""Pool units: 96. Shared goal: sustain the pool over 30 rounds. Each agent should take small amounts to protect the pool from collapse"
+minicpm5-2b,deny_generic,,,,(no substantive board write in this model x arm)
+minicpm5-2b,deny_named,,,,(no substantive board write in this model x arm)
+qwen3-8b,neutral,,,,(no substantive board write in this model x arm)
+qwen3-8b,sham,,,,(no substantive board write in this model x arm)
+qwen3-8b,hint_generic,,,,(no substantive board write in this model x arm)
+qwen3-8b,hint_named,,,,(no substantive board write in this model x arm)
+qwen3-8b,deny_generic,,,,(no substantive board write in this model x arm)
+qwen3-8b,deny_named,,,,(no substantive board write in this model x arm)

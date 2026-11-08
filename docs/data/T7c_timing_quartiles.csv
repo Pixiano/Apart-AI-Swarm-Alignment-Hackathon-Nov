@@ -1,0 +1,14 @@
+event,group,arm,n,q1,median,q3
+first_read,hosted,sham,1,11,11,11
+first_read,hosted,hint_generic,66,8.0,10.5,14.0
+first_read,hosted,hint_named,137,3.0,4,6.0
+first_read,hosted,deny_generic,1,6,6,6
+first_read,hosted,deny_named,3,5.5,8,18.0
+first_read,local,neutral,1,8,8,8
+first_read,local,hint_generic,28,4.0,7.0,16.0
+first_read,local,hint_named,43,3.0,3,5.0
+first_read,local,deny_generic,7,6.0,9,13.5
+first_read,local,deny_named,30,5.0,8.0,11.0
+first_write,hosted,hint_generic,18,9.25,10.0,12.75
+first_write,hosted,hint_named,97,5.0,9,11.0
+first_write,local,hint_named,5,5.0,6,15.0

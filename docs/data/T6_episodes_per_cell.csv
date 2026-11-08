@@ -1,0 +1,15 @@
+cell,deepseek-v4-flash,qwen3.8-27b,qwen3.5-397b,gemma-4-31b-it,minicpm5-2b,qwen3-8b,all
+deny_generic2,50,20,20,20,20,20,150
+deny_generic5,50,0,0,0,20,20,90
+deny_named2,50,20,20,20,20,20,150
+deny_named5,50,0,0,0,20,20,90
+hint_generic2,50,20,20,20,20,20,150
+hint_generic5,50,0,0,0,20,20,90
+hint_named2,50,20,20,20,20,20,150
+hint_named2-blind,50,0,0,0,20,20,90
+hint_named5,50,0,0,0,20,20,90
+neutral0,50,20,20,20,20,20,150
+neutral0-blind,50,0,0,0,20,20,90
+neutral0-told,50,0,0,0,20,20,90
+sham2,50,20,20,20,20,20,150
+TOTAL,650,120,120,120,260,260,1530
