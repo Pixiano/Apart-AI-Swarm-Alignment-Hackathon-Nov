@@ -3,7 +3,8 @@ message: "If you use this software or data, please cite it as below."
 title: "[Title: owner to confirm]"
 type: software
 authors:
-  - name: "Vatsal"
+  - family-names: "Kumar"
+    given-names: "Vatsal"
 version: "[version or tag, e.g. submitted]"
 date-released: "[YYYY-MM-DD]"
 repository-code: "https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov"
