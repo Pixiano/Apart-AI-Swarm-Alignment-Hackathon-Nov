@@ -47,3 +47,12 @@
 !docs/data/
 !docs/data/*.csv
 !LICENSE
+
+# video / voice-over workflow stays local
+video/
+VO_*
+docs/animation_prompt.md
+docs/video/
+*.wav
+*.mp4
+*.srt
