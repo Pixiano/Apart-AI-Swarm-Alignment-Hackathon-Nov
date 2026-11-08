@@ -62,7 +62,7 @@ Arms: `neutral`, `sham`, `hint_generic`, `hint_named`, `deny_generic`, `deny_nam
 
 ### Run one episode with a hosted model
 
-Needs the `adaption` Python client installed and a key in the environment. Never put the key in a file or on a command line.
+Needs the `adaption` Python client (`pip install -r requirements.txt`) and a key in the environment. Never put the key in a file or on a command line.
 
 ```
 # bash / Git Bash
@@ -121,6 +121,10 @@ git show plan-freeze --stat
 ### How the pre-specification and the deviations log work
 
 `prereg/PREREG_v1.md` fixes the design, the outcome definition, the contrasts, the Holm correction, the null margins and the models before the confirmatory data. `prereg/DEVIATIONS.md` is the only place where anything that changed afterwards is recorded. The rule: bug fixes before the first pilot episode are logged; after the prompt hashes, any change to a prompt, configuration value, margin or threshold needs a row marked "touched: yes". Each row says what changed, why, whether it touched the pre-registered analysis, and whether it came before any pilot or confirmatory episode. The log also lists known issues that were disclosed rather than changed. A fix made after the confirmatory data (D-012, parser) is not outcome-blind; the frozen parse is the primary result and the fixed parse is a sensitivity analysis.
+
+## Example episodes
+
+`docs/examples/` holds two full episode logs (one JSON line per event) with their summaries, so you can see the raw format without running anything: `deepseek-v4-flash-N10-neutral0-1001` (no peer hint) and `deepseek-v4-flash-N10-hint_named2-1007` (two peers name the file; an agent writes a quota). Summary fields: `collapsed`, `collapse_round`, `payoff`, `first_llm_read_board`, `first_llm_write_board`, `calls`, `empty_calls`, `board_text`, `llm_seats`, `bot_seats`.
 
 ## Figure gallery
 

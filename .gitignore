@@ -56,3 +56,7 @@ docs/video/
 *.wav
 *.mp4
 *.srt
+!docs/examples/
+!docs/examples/*.jsonl
+!docs/examples/*.json
+!requirements.txt

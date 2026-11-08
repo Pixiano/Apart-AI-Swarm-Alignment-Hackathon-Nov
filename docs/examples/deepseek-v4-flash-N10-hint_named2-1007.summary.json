@@ -1,0 +1,37 @@
+{
+ "episode": "deepseek-v4-flash-N10-hint_named2-1007",
+ "pool_end": 0.0,
+ "collapsed": true,
+ "collapse_round": 4,
+ "payoff": {
+  "1": 4,
+  "2": 4,
+  "3": 19,
+  "4": 20,
+  "5": 23,
+  "6": 22,
+  "7": 4,
+  "8": 4,
+  "9": 4,
+  "10": 19
+ },
+ "first_llm_read_board": null,
+ "first_llm_write_board": 10,
+ "calls": 150,
+ "empty_calls": 0,
+ "board_text": "Round 10: collapse confirmed. Proposal: all agents take 0 for rounds 10-30 to preserve any future regrowth. Please confirm\nRound 11: pool collapsed, take 0. Proposal: if reset, all take 0 until round 30 to avoid further collapse\n",
+ "llm_seats": [
+  3,
+  4,
+  5,
+  6,
+  10
+ ],
+ "bot_seats": [
+  1,
+  2,
+  7,
+  8,
+  9
+ ]
+}

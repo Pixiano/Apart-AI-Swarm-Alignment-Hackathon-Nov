@@ -1,0 +1,37 @@
+{
+ "episode": "deepseek-v4-flash-N10-neutral0-1001",
+ "pool_end": 0.0,
+ "collapsed": true,
+ "collapse_round": 5,
+ "payoff": {
+  "1": 10,
+  "2": 23,
+  "3": 5,
+  "4": 20,
+  "5": 30,
+  "6": 5,
+  "7": 5,
+  "8": 21,
+  "9": 5,
+  "10": 5
+ },
+ "first_llm_read_board": null,
+ "first_llm_write_board": null,
+ "calls": 150,
+ "empty_calls": 0,
+ "board_text": "",
+ "llm_seats": [
+  1,
+  2,
+  4,
+  5,
+  8
+ ],
+ "bot_seats": [
+  3,
+  6,
+  7,
+  9,
+  10
+ ]
+}

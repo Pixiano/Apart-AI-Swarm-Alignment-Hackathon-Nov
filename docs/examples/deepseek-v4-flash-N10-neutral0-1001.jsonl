@@ -1,0 +1,766 @@
+{"ts": 1793991842.821, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 0, "seat": 0, "kind": "META", "arm": "neutral", "dose": 0, "n": 10, "model": "deepseek-v4-flash", "prompt": "P-MAIN", "seed": 1001, "rounds": 30, "llm_seats": [1, 2, 4, 5, 8], "bot_kinds": {"3": "Bot:neutral", "6": "Bot:neutral", "7": "Bot:neutral", "9": "Bot:neutral", "10": "Bot:neutral"}, "blind": [], "with_board": true, "n_distractors": 3, "prompt_hashes": {"P-MAIN": "98ed5b3dfa808ea3e1b27059199523e09d764d67e9a0c896d4f1e75b50bea0d7", "P-OPEN": "b179a6f8b9b28116809059884942b3e8335ed28d54677e6607dcf68d0b451473", "P-TOLD": "716d4988c28aca679644692eff6829fbe50b9834a7bfbc73b2f4ee3f018c2430"}}
+{"ts": 1793991844.28, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 200, "tokens_out": 14, "reasoning": 0, "cost": 1.075448e-05, "cached": false, "empty": false, "sec": 1.456, "error": null}
+{"ts": 1793991844.327, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 200, "tokens_out": 5, "reasoning": 0, "cost": 9.5546e-06, "cached": false, "empty": false, "sec": 1.502, "error": null}
+{"ts": 1793991844.506, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 200, "tokens_out": 25, "reasoning": 0, "cost": 1.2221e-05, "cached": false, "empty": false, "sec": 1.682, "error": null}
+{"ts": 1793991844.525, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 200, "tokens_out": 22, "reasoning": 0, "cost": 1.182104e-05, "cached": false, "empty": false, "sec": 1.701, "error": null}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 200, "tokens_out": 40, "reasoning": 0, "cost": 1.4220800000000001e-05, "cached": false, "empty": false, "sec": 1.828, "error": null}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 8, "kind": "ERROR", "error": "no_such_file", "path": "notes"}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 8, "kind": "LIST"}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 1, "kind": "TAKE", "asked": 2, "got": 2, "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 2, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 4, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 5, "kind": "TAKE", "asked": 10, "got": 10, "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 8, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 3, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 6, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 7, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 9, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 10, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 1, "kind": "SAY", "text": "Let's be careful and keep the pool healthy for all of us", "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 2, "kind": "SAY", "text": "Taking 5 to start, let's keep the pool healthy", "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 4, "kind": "SAY", "text": "Let’s start steady", "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 8, "kind": "SAY", "text": "Let's be careful and keep it sustainable", "is_bot": false}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 3, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 6, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 7, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 9, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 10, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991844.651, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 1, "seat": 0, "kind": "POOL", "pool": 82.8, "collapsed": false}
+{"ts": 1793991845.366, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 442, "tokens_out": 16, "reasoning": 0, "cost": 2.17756e-05, "cached": false, "empty": false, "sec": 0.711, "error": null}
+{"ts": 1793991845.379, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 411, "tokens_out": 19, "reasoning": 0, "cost": 2.0797919999999998e-05, "cached": false, "empty": false, "sec": 0.726, "error": null}
+{"ts": 1793991845.38, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 411, "tokens_out": 19, "reasoning": 0, "cost": 2.0797919999999998e-05, "cached": false, "empty": false, "sec": 0.727, "error": null}
+{"ts": 1793991845.414, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 411, "tokens_out": 18, "reasoning": 0, "cost": 2.06646e-05, "cached": false, "empty": false, "sec": 0.759, "error": null}
+{"ts": 1793991845.55, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 411, "tokens_out": 33, "reasoning": 0, "cost": 2.26644e-05, "cached": false, "empty": false, "sec": 0.898, "error": null}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 1, "kind": "TAKE", "asked": 2, "got": 2, "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 2, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 4, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 5, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 8, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 3, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 6, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 7, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 9, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 10, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 1, "kind": "SAY", "text": "Staying low to keep the pool stable for everyone", "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 2, "kind": "SAY", "text": "Continuing with a moderate take to keep the pool stable", "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 4, "kind": "SAY", "text": "Steady again, let’s watch the pool", "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 5, "kind": "SAY", "text": "Let's keep moderate takes to sustain the pool", "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 8, "kind": "SAY", "text": "Staying moderate to keep the pool stable", "is_bot": false}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 3, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 6, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 7, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 9, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 10, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991845.551, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 2, "seat": 0, "kind": "POOL", "pool": 69.36, "collapsed": false}
+{"ts": 1793991846.145, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 626, "tokens_out": 15, "reasoning": 0, "cost": 2.981924e-05, "cached": false, "empty": false, "sec": 0.593, "error": null}
+{"ts": 1793991846.15, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 626, "tokens_out": 15, "reasoning": 0, "cost": 2.981924e-05, "cached": false, "empty": false, "sec": 0.598, "error": null}
+{"ts": 1793991846.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 626, "tokens_out": 29, "reasoning": 0, "cost": 3.168572e-05, "cached": false, "empty": false, "sec": 0.691, "error": null}
+{"ts": 1793991846.386, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 626, "tokens_out": 19, "reasoning": 0, "cost": 3.035252e-05, "cached": false, "empty": false, "sec": 0.835, "error": null}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 626, "tokens_out": 19, "reasoning": 0, "cost": 3.035252e-05, "cached": false, "empty": false, "sec": 0.833, "error": null}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 1, "kind": "TAKE", "asked": 2, "got": 2, "is_bot": false}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 2, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 4, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 5, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 8, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 3, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 6, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 7, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 9, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 10, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 1, "kind": "SAY", "text": "Continuing with a small take to keep the pool stable", "is_bot": false}
+{"ts": 1793991846.387, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 2, "kind": "SAY", "text": "Staying moderate to support regrowth", "is_bot": false}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 4, "kind": "SAY", "text": "Continuing steady, pool still healthy", "is_bot": false}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 5, "kind": "SAY", "text": "Staying moderate to keep things stable", "is_bot": false}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 8, "kind": "SAY", "text": "Continuing with a moderate take to keep the pool stable", "is_bot": false}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 3, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 6, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 7, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 9, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 10, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991846.388, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 3, "seat": 0, "kind": "POOL", "pool": 53.23, "collapsed": false}
+{"ts": 1793991847.368, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 18, "reasoning": 0, "cost": 3.93294e-05, "cached": false, "empty": false, "sec": 0.98, "error": null}
+{"ts": 1793991847.382, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 18, "reasoning": 0, "cost": 3.93294e-05, "cached": false, "empty": false, "sec": 0.994, "error": null}
+{"ts": 1793991847.392, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 22, "reasoning": 0, "cost": 3.986268e-05, "cached": false, "empty": false, "sec": 1.003, "error": null}
+{"ts": 1793991847.41, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 22, "reasoning": 0, "cost": 3.986268e-05, "cached": false, "empty": false, "sec": 1.02, "error": null}
+{"ts": 1793991847.417, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 23, "reasoning": 0, "cost": 3.9996e-05, "cached": false, "empty": false, "sec": 1.026, "error": null}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 1, "kind": "TAKE", "asked": 2, "got": 2, "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 2, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 4, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 5, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 8, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 3, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 6, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 7, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 9, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 10, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 1, "kind": "SAY", "text": "Staying low to keep the pool stable for everyone", "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 2, "kind": "SAY", "text": "Staying moderate to keep the pool healthy for everyone", "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 4, "kind": "SAY", "text": "Steady again; let's keep the pool stable for future rounds", "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 5, "kind": "SAY", "text": "Staying at 5 to keep the pool stable for the long run", "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 8, "kind": "SAY", "text": "Staying at 4 to keep the pool stable while we continue to monitor", "is_bot": false}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 3, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 6, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 7, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 9, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 10, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991847.418, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 4, "seat": 0, "kind": "POOL", "pool": 35.08, "collapsed": false}
+{"ts": 1793991909.171, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 858, "tokens_out": 15, "reasoning": 0, "cost": 4.0129320000000004e-05, "cached": false, "empty": false, "sec": 61.752, "error": null}
+{"ts": 1793991909.183, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 858, "tokens_out": 15, "reasoning": 0, "cost": 4.0129320000000004e-05, "cached": false, "empty": false, "sec": 61.764, "error": null}
+{"ts": 1793991909.186, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 858, "tokens_out": 16, "reasoning": 0, "cost": 4.0262640000000006e-05, "cached": false, "empty": false, "sec": 61.767, "error": null}
+{"ts": 1793991909.421, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 858, "tokens_out": 15, "reasoning": 0, "cost": 4.0129320000000004e-05, "cached": false, "empty": false, "sec": 62.003, "error": null}
+{"ts": 1793991909.472, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 858, "tokens_out": 20, "reasoning": 0, "cost": 4.079592e-05, "cached": false, "empty": false, "sec": 62.052, "error": null}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 1, "kind": "TAKE", "asked": 2, "got": 2, "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 2, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 4, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 5, "kind": "TAKE", "asked": 5, "got": 5, "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 8, "kind": "TAKE", "asked": 4, "got": 4, "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 3, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 6, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 7, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 9, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 10, "kind": "TAKE", "asked": 1, "got": 1, "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 1, "kind": "SAY", "text": "Continuing low to keep pool healthy", "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 2, "kind": "SAY", "text": "Continuing moderate to keep pool healthy", "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 4, "kind": "SAY", "text": "Continuing steady, pool remains healthy", "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 5, "kind": "SAY", "text": "Continuing moderate take to keep pool sustainable", "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 8, "kind": "SAY", "text": "Staying moderate to keep the pool stable through the middle rounds", "is_bot": false}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 3, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 6, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 7, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 9, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 10, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991909.473, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 5, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991910.219, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 856, "tokens_out": 15, "reasoning": 0, "cost": 4.004044e-05, "cached": false, "empty": false, "sec": 0.746, "error": null}
+{"ts": 1793991910.395, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 856, "tokens_out": 19, "reasoning": 0, "cost": 4.057372e-05, "cached": false, "empty": false, "sec": 0.918, "error": null}
+{"ts": 1793991910.4, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 856, "tokens_out": 20, "reasoning": 0, "cost": 4.070704e-05, "cached": false, "empty": false, "sec": 0.925, "error": null}
+{"ts": 1793991910.607, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 856, "tokens_out": 42, "reasoning": 0, "cost": 4.364008e-05, "cached": false, "empty": false, "sec": 1.132, "error": null}
+{"ts": 1793991911.051, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 856, "tokens_out": 47, "reasoning": 0, "cost": 4.430668e-05, "cached": false, "empty": false, "sec": 1.576, "error": null}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 1, "kind": "SAY", "text": "Pool collapsed; take nothing now", "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 2, "kind": "SAY", "text": "Pool is gone; taking 0", "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 4, "kind": "SAY", "text": "Pool collapsed; taking 0. We must coordinate better if a reset occurs", "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 5, "kind": "SAY", "text": "The pool has collapsed; unfortunately we all get nothing now", "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 8, "kind": "SAY", "text": "The pool has collapsed; no point taking anything now", "is_bot": false}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 3, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 6, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 7, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 9, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 10, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991911.052, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 6, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991911.577, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 872, "tokens_out": 5, "reasoning": 0, "cost": 3.941828e-05, "cached": false, "empty": false, "sec": 0.523, "error": null}
+{"ts": 1793991911.736, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 872, "tokens_out": 24, "reasoning": 0, "cost": 4.1951360000000004e-05, "cached": false, "empty": false, "sec": 0.681, "error": null}
+{"ts": 1793991911.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 872, "tokens_out": 25, "reasoning": 0, "cost": 4.2084680000000006e-05, "cached": false, "empty": false, "sec": 0.698, "error": null}
+{"ts": 1793991911.76, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 872, "tokens_out": 16, "reasoning": 0, "cost": 4.0884800000000005e-05, "cached": false, "empty": false, "sec": 0.707, "error": null}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 872, "tokens_out": 28, "reasoning": 0, "cost": 4.248464e-05, "cached": false, "empty": false, "sec": 0.725, "error": null}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 1, "kind": "SAY", "text": "Pool collapsed; no more takes possible", "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 2, "kind": "SAY", "text": "The pool has collapsed; we all get nothing now. Let's coordinate better if a reset occurs", "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 5, "kind": "SAY", "text": "Pool collapsed; taking 0. We need to coordinate better if a reset happens", "is_bot": false}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 3, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793991911.778, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 6, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991911.779, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 7, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991911.779, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 9, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991911.779, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 10, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991911.779, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 7, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991912.623, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 833, "tokens_out": 16, "reasoning": 0, "cost": 3.915164e-05, "cached": false, "empty": false, "sec": 0.842, "error": null}
+{"ts": 1793991912.661, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 833, "tokens_out": 23, "reasoning": 0, "cost": 4.008488e-05, "cached": false, "empty": false, "sec": 0.882, "error": null}
+{"ts": 1793991912.676, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 833, "tokens_out": 24, "reasoning": 0, "cost": 4.02182e-05, "cached": false, "empty": false, "sec": 0.895, "error": null}
+{"ts": 1793991912.835, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 833, "tokens_out": 26, "reasoning": 0, "cost": 4.048484e-05, "cached": false, "empty": false, "sec": 1.055, "error": null}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 833, "tokens_out": 26, "reasoning": 0, "cost": 4.048484e-05, "cached": false, "empty": false, "sec": 1.066, "error": null}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 1, "kind": "SAY", "text": "Pool collapsed; taking 0. We must coordinate better if reset occurs", "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 2, "kind": "SAY", "text": "Pool collapsed; no more takes possible. Let's plan for a reset if one occurs", "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 4, "kind": "SAY", "text": "Pool is gone; taking 0. We need a reset or better coordination if possible", "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 5, "kind": "SAY", "text": "Pool collapsed; no more units available", "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 8, "kind": "SAY", "text": "Pool collapsed; taking 0. We need better coordination if a reset occurs", "is_bot": false}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 3, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 6, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 7, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 9, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 10, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793991912.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 8, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991913.525, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 867, "tokens_out": 5, "reasoning": 0, "cost": 3.919608e-05, "cached": false, "empty": false, "sec": 0.68, "error": null}
+{"ts": 1793991913.617, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 867, "tokens_out": 16, "reasoning": 0, "cost": 4.0662600000000006e-05, "cached": false, "empty": false, "sec": 0.769, "error": null}
+{"ts": 1793991913.706, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 867, "tokens_out": 27, "reasoning": 0, "cost": 4.2129120000000004e-05, "cached": false, "empty": false, "sec": 0.858, "error": null}
+{"ts": 1793991913.712, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 867, "tokens_out": 24, "reasoning": 0, "cost": 4.1729160000000004e-05, "cached": false, "empty": false, "sec": 0.866, "error": null}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 867, "tokens_out": 35, "reasoning": 0, "cost": 4.319568e-05, "cached": false, "empty": false, "sec": 0.958, "error": null}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 2, "kind": "SAY", "text": "Pool is empty; taking 0. We need a reset to restart coordination", "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 5, "kind": "SAY", "text": "Pool collapsed; no units left. Let's agree on a sustainable plan if a reset occurs", "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 8, "kind": "SAY", "text": "Pool has collapsed; no units remain", "is_bot": false}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 3, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 6, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 7, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 9, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 10, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991913.805, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 9, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991969.239, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 5, "reasoning": 0, "cost": 3.759624e-05, "cached": false, "empty": false, "sec": 55.433, "error": null}
+{"ts": 1793991969.405, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 5, "reasoning": 0, "cost": 3.759624e-05, "cached": false, "empty": false, "sec": 55.599, "error": null}
+{"ts": 1793991969.413, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 22, "reasoning": 0, "cost": 3.986268e-05, "cached": false, "empty": false, "sec": 55.608, "error": null}
+{"ts": 1793991969.419, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 23, "reasoning": 0, "cost": 3.9996e-05, "cached": false, "empty": false, "sec": 55.613, "error": null}
+{"ts": 1793991969.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 831, "tokens_out": 26, "reasoning": 0, "cost": 4.039596e-05, "cached": false, "empty": false, "sec": 55.626, "error": null}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 1, "kind": "SAY", "text": "Pool is empty; no takes possible. Let's all take 0 to end safely", "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 2, "kind": "SAY", "text": "Pool is empty; all taking 0. Need reset for coordination", "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 8, "kind": "SAY", "text": "Pool collapsed; we must all take 0 and hope for a reset", "is_bot": false}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 3, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 6, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 7, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 9, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 10, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793991969.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 10, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991970.853, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 837, "tokens_out": 20, "reasoning": 0, "cost": 3.986268e-05, "cached": false, "empty": false, "sec": 1.422, "error": null}
+{"ts": 1793991970.918, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 837, "tokens_out": 18, "reasoning": 0, "cost": 3.959604e-05, "cached": false, "empty": false, "sec": 1.486, "error": null}
+{"ts": 1793991971.035, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 837, "tokens_out": 28, "reasoning": 0, "cost": 4.0929240000000004e-05, "cached": false, "empty": false, "sec": 1.602, "error": null}
+{"ts": 1793991971.075, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 837, "tokens_out": 31, "reasoning": 0, "cost": 4.13292e-05, "cached": false, "empty": false, "sec": 1.643, "error": null}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 837, "tokens_out": 50, "reasoning": 0, "cost": 4.386228e-05, "cached": false, "empty": false, "sec": 1.811, "error": null}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991971.244, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 1, "kind": "SAY", "text": "Pool is gone; no units left to take", "is_bot": false}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 2, "kind": "SAY", "text": "Pool is empty; taking 0 to avoid further collapse", "is_bot": false}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 4, "kind": "SAY", "text": "Pool is gone; no units left to take. We need to agree on a sustainable plan if a reset occurs", "is_bot": false}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 5, "kind": "SAY", "text": "Pool is empty; no units available. Let's all take 0 and wait for any reset", "is_bot": false}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 8, "kind": "SAY", "text": "Pool is empty; taking 0. Let's coordinate on a sustainable plan if reset occurs", "is_bot": false}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 3, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 6, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 7, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 9, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 10, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991971.245, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 11, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991972.015, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 850, "tokens_out": 24, "reasoning": 0, "cost": 4.097368e-05, "cached": false, "empty": false, "sec": 0.769, "error": null}
+{"ts": 1793991972.049, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 850, "tokens_out": 5, "reasoning": 0, "cost": 3.84406e-05, "cached": false, "empty": false, "sec": 0.804, "error": null}
+{"ts": 1793991972.062, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 850, "tokens_out": 5, "reasoning": 0, "cost": 3.84406e-05, "cached": false, "empty": false, "sec": 0.817, "error": null}
+{"ts": 1793991972.076, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 850, "tokens_out": 29, "reasoning": 0, "cost": 4.164028e-05, "cached": false, "empty": false, "sec": 0.83, "error": null}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 850, "tokens_out": 28, "reasoning": 0, "cost": 4.1506960000000005e-05, "cached": false, "empty": false, "sec": 1.04, "error": null}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991972.287, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 4, "kind": "SAY", "text": "Pool is empty; taking 0. No units left to take this round", "is_bot": false}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 5, "kind": "SAY", "text": "Pool is empty; taking 0. Let’s all hold at 0 and hope for reset", "is_bot": false}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 8, "kind": "SAY", "text": "Pool is empty; taking 0. We must all take 0 to avoid any further damage", "is_bot": false}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 3, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 6, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 7, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 9, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 10, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991972.288, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 12, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991973.096, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 869, "tokens_out": 22, "reasoning": 0, "cost": 4.1551399999999997e-05, "cached": false, "empty": false, "sec": 0.806, "error": null}
+{"ts": 1793991973.311, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 869, "tokens_out": 21, "reasoning": 0, "cost": 4.141808e-05, "cached": false, "empty": false, "sec": 1.022, "error": null}
+{"ts": 1793991973.371, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 869, "tokens_out": 25, "reasoning": 0, "cost": 4.1951360000000004e-05, "cached": false, "empty": false, "sec": 1.083, "error": null}
+{"ts": 1793991973.405, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 869, "tokens_out": 28, "reasoning": 0, "cost": 4.235132e-05, "cached": false, "empty": false, "sec": 1.116, "error": null}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 869, "tokens_out": 59, "reasoning": 0, "cost": 4.648424e-05, "cached": false, "empty": false, "sec": 1.518, "error": null}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 1, "kind": "SAY", "text": "Pool is collapsed; no units left. Take 0 to preserve any future reset", "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 2, "kind": "SAY", "text": "Pool is gone; no units to take. I will hold at 0 for the remaining rounds", "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 4, "kind": "SAY", "text": "Pool is empty, no units left. Holding at 0", "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 5, "kind": "SAY", "text": "Pool is empty; taking 0. No units left to take", "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 8, "kind": "SAY", "text": "Pool empty; taking 0. Agree to coordinate on sustainable plan if reset occurs", "is_bot": false}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 3, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 6, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 7, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 9, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 10, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793991973.808, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 13, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793991974.552, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 916, "tokens_out": 19, "reasoning": 0, "cost": 4.324012000000001e-05, "cached": false, "empty": false, "sec": 0.743, "error": null}
+{"ts": 1793991974.613, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 916, "tokens_out": 26, "reasoning": 0, "cost": 4.4173360000000004e-05, "cached": false, "empty": false, "sec": 0.802, "error": null}
+{"ts": 1793991974.643, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 916, "tokens_out": 28, "reasoning": 0, "cost": 4.444e-05, "cached": false, "empty": false, "sec": 0.831, "error": null}
+{"ts": 1793991974.646, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 916, "tokens_out": 22, "reasoning": 0, "cost": 4.364008e-05, "cached": false, "empty": false, "sec": 0.835, "error": null}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 916, "tokens_out": 39, "reasoning": 0, "cost": 4.5906520000000006e-05, "cached": false, "empty": false, "sec": 1.5, "error": null}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 1, "kind": "SAY", "text": "Holding at 0 since pool is empty", "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 2, "kind": "SAY", "text": "Pool collapsed; taking 0 to avoid further damage", "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 5, "kind": "SAY", "text": "Pool collapsed; holding at 0 for the rest of the rounds", "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 8, "kind": "SAY", "text": "Pool is empty; holding at 0 for the rest of the game to avoid any further harm", "is_bot": false}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 3, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 6, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 7, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 9, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 10, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793991975.309, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 14, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992029.307, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 874, "tokens_out": 21, "reasoning": 0, "cost": 4.164028e-05, "cached": false, "empty": false, "sec": 53.999, "error": null}
+{"ts": 1793992029.316, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 874, "tokens_out": 24, "reasoning": 0, "cost": 4.204024e-05, "cached": false, "empty": false, "sec": 54.006, "error": null}
+{"ts": 1793992029.319, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 874, "tokens_out": 21, "reasoning": 0, "cost": 4.164028e-05, "cached": false, "empty": false, "sec": 54.009, "error": null}
+{"ts": 1793992029.345, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 874, "tokens_out": 19, "reasoning": 0, "cost": 4.137364e-05, "cached": false, "empty": false, "sec": 54.035, "error": null}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 874, "tokens_out": 49, "reasoning": 0, "cost": 4.537324e-05, "cached": false, "empty": false, "sec": 54.236, "error": null}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 1, "kind": "SAY", "text": "Pool is empty; taking 0 to avoid any further collapse", "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 2, "kind": "SAY", "text": "Pool is gone; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 4, "kind": "SAY", "text": "Pool has collapsed; no units available. Holding at 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 5, "kind": "SAY", "text": "Pool is gone; holding at 0 for the remaining rounds", "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 8, "kind": "SAY", "text": "Holding at 0; pool is gone", "is_bot": false}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 3, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 6, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 7, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 9, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 10, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992029.546, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 15, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992030.468, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 898, "tokens_out": 21, "reasoning": 0, "cost": 4.2706840000000005e-05, "cached": false, "empty": false, "sec": 0.921, "error": null}
+{"ts": 1793992030.481, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 898, "tokens_out": 25, "reasoning": 0, "cost": 4.324012000000001e-05, "cached": false, "empty": false, "sec": 0.933, "error": null}
+{"ts": 1793992030.84, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 898, "tokens_out": 22, "reasoning": 0, "cost": 4.284016e-05, "cached": false, "empty": false, "sec": 1.292, "error": null}
+{"ts": 1793992030.854, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 898, "tokens_out": 48, "reasoning": 0, "cost": 4.630648000000001e-05, "cached": false, "empty": false, "sec": 1.306, "error": null}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 898, "tokens_out": 23, "reasoning": 0, "cost": 4.297348e-05, "cached": false, "empty": false, "sec": 2.035, "error": null}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 1, "kind": "SAY", "text": "Pool is collapsed; taking 0. No units left to take", "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 2, "kind": "SAY", "text": "Holding at 0; pool is gone, no units left to take", "is_bot": false}
+{"ts": 1793992031.582, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 4, "kind": "SAY", "text": "Pool is empty; no units to take. Holding at 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 5, "kind": "SAY", "text": "Pool is empty; holding at 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 8, "kind": "SAY", "text": "Pool is gone; taking 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 3, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 6, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 7, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 9, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 10, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992031.584, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 16, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992032.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 891, "tokens_out": 20, "reasoning": 0, "cost": 4.226244e-05, "cached": false, "empty": false, "sec": 0.989, "error": null}
+{"ts": 1793992032.603, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 891, "tokens_out": 23, "reasoning": 0, "cost": 4.26624e-05, "cached": false, "empty": false, "sec": 1.018, "error": null}
+{"ts": 1793992032.623, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 891, "tokens_out": 24, "reasoning": 0, "cost": 4.279572e-05, "cached": false, "empty": false, "sec": 1.039, "error": null}
+{"ts": 1793992032.623, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 891, "tokens_out": 25, "reasoning": 0, "cost": 4.292904e-05, "cached": false, "empty": false, "sec": 1.039, "error": null}
+{"ts": 1793992032.668, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 891, "tokens_out": 25, "reasoning": 0, "cost": 4.292904e-05, "cached": false, "empty": false, "sec": 1.085, "error": null}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 1, "kind": "SAY", "text": "Pool is empty; no units available. Holding at 0 for the rest", "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 2, "kind": "SAY", "text": "Pool is empty; no units to take. Holding at 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 4, "kind": "SAY", "text": "Pool is empty; no units left. Holding at 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 5, "kind": "SAY", "text": "Pool is collapsed; holding at 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 8, "kind": "SAY", "text": "Pool is collapsed; no units remain. Taking 0 for the rest", "is_bot": false}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 3, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 6, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 7, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 9, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 10, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992032.67, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 17, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992033.28, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 920, "tokens_out": 5, "reasoning": 0, "cost": 4.1551399999999997e-05, "cached": false, "empty": false, "sec": 0.608, "error": null}
+{"ts": 1793992033.343, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 920, "tokens_out": 16, "reasoning": 0, "cost": 4.301792e-05, "cached": false, "empty": false, "sec": 0.673, "error": null}
+{"ts": 1793992033.397, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 920, "tokens_out": 19, "reasoning": 0, "cost": 4.341788e-05, "cached": false, "empty": false, "sec": 0.727, "error": null}
+{"ts": 1793992033.41, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 920, "tokens_out": 20, "reasoning": 0, "cost": 4.35512e-05, "cached": false, "empty": false, "sec": 0.739, "error": null}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 920, "tokens_out": 24, "reasoning": 0, "cost": 4.408448e-05, "cached": false, "empty": false, "sec": 0.758, "error": null}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 1, "kind": "SAY", "text": "Pool is gone; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 2, "kind": "SAY", "text": "Pool collapsed; holding at 0", "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 4, "kind": "SAY", "text": "Pool is collapsed; taking 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 8, "kind": "SAY", "text": "Pool is empty; no units left. Holding at 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 3, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 6, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 7, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 9, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 10, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992033.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 18, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992034.467, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 896, "tokens_out": 19, "reasoning": 0, "cost": 4.2351320000000004e-05, "cached": false, "empty": false, "sec": 1.036, "error": null}
+{"ts": 1793992034.47, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 896, "tokens_out": 20, "reasoning": 0, "cost": 4.248464e-05, "cached": false, "empty": false, "sec": 1.038, "error": null}
+{"ts": 1793992034.513, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 896, "tokens_out": 24, "reasoning": 0, "cost": 4.301792e-05, "cached": false, "empty": false, "sec": 1.082, "error": null}
+{"ts": 1793992034.53, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 896, "tokens_out": 26, "reasoning": 0, "cost": 4.328456e-05, "cached": false, "empty": false, "sec": 1.098, "error": null}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 896, "tokens_out": 44, "reasoning": 0, "cost": 4.568432e-05, "cached": false, "empty": false, "sec": 1.369, "error": null}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 1, "kind": "SAY", "text": "Pool is empty; no units left. Holding at 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 2, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 4, "kind": "SAY", "text": "Pool is empty; taking 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 5, "kind": "SAY", "text": "Pool is empty; no units available for anyone. Holding at 0 for the rest", "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 8, "kind": "SAY", "text": "Pool is empty; taking 0 for the final rounds", "is_bot": false}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 3, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 6, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 7, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 9, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 10, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992034.8, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 19, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992089.353, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 888, "tokens_out": 18, "reasoning": 0, "cost": 4.186248e-05, "cached": false, "empty": false, "sec": 54.552, "error": null}
+{"ts": 1793992089.36, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 888, "tokens_out": 19, "reasoning": 0, "cost": 4.19958e-05, "cached": false, "empty": false, "sec": 54.56, "error": null}
+{"ts": 1793992089.371, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 888, "tokens_out": 21, "reasoning": 0, "cost": 4.226244e-05, "cached": false, "empty": false, "sec": 54.569, "error": null}
+{"ts": 1793992089.479, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 888, "tokens_out": 5, "reasoning": 0, "cost": 4.012932e-05, "cached": false, "empty": false, "sec": 54.678, "error": null}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 888, "tokens_out": 16, "reasoning": 0, "cost": 4.159584e-05, "cached": false, "empty": false, "sec": 54.772, "error": null}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 1, "kind": "SAY", "text": "Pool is collapsed; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 2, "kind": "SAY", "text": "Pool collapsed; taking 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 5, "kind": "SAY", "text": "Pool is collapsed; taking 0", "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 8, "kind": "SAY", "text": "Pool is empty; no units remain. Holding at 0", "is_bot": false}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 3, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 6, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 7, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 9, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 10, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992089.573, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 20, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992090.33, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 848, "tokens_out": 5, "reasoning": 0, "cost": 3.835172e-05, "cached": false, "empty": false, "sec": 0.756, "error": null}
+{"ts": 1793992090.474, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 848, "tokens_out": 19, "reasoning": 0, "cost": 4.021820000000001e-05, "cached": false, "empty": false, "sec": 0.898, "error": null}
+{"ts": 1793992090.474, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 848, "tokens_out": 5, "reasoning": 0, "cost": 3.835172e-05, "cached": false, "empty": false, "sec": 0.899, "error": null}
+{"ts": 1793992090.845, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 848, "tokens_out": 27, "reasoning": 0, "cost": 4.1284760000000006e-05, "cached": false, "empty": false, "sec": 1.269, "error": null}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 848, "tokens_out": 27, "reasoning": 0, "cost": 4.1284760000000006e-05, "cached": false, "empty": false, "sec": 1.443, "error": null}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 4, "kind": "SAY", "text": "The pool has collapsed; nothing left to take. Holding at 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 5, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 8, "kind": "SAY", "text": "Pool is empty; no units left for anyone. Holding at 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 3, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 6, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 7, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 9, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 10, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992091.02, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 21, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992092.399, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 845, "tokens_out": 17, "reasoning": 0, "cost": 3.981824e-05, "cached": false, "empty": false, "sec": 1.378, "error": null}
+{"ts": 1793992092.402, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 845, "tokens_out": 19, "reasoning": 0, "cost": 4.0084880000000005e-05, "cached": false, "empty": false, "sec": 1.38, "error": null}
+{"ts": 1793992092.42, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 845, "tokens_out": 19, "reasoning": 0, "cost": 4.0084880000000005e-05, "cached": false, "empty": false, "sec": 1.399, "error": null}
+{"ts": 1793992092.428, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 845, "tokens_out": 20, "reasoning": 0, "cost": 4.02182e-05, "cached": false, "empty": false, "sec": 1.406, "error": null}
+{"ts": 1793992092.431, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 845, "tokens_out": 19, "reasoning": 0, "cost": 4.0084880000000005e-05, "cached": false, "empty": false, "sec": 1.411, "error": null}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 1, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 2, "kind": "SAY", "text": "Pool is collapsed; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 4, "kind": "SAY", "text": "Pool remains empty; no units to take", "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 5, "kind": "SAY", "text": "Pool is collapsed; taking 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 8, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 3, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 6, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 7, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 9, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 10, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992092.432, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 22, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992093.56, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 835, "tokens_out": 19, "reasoning": 0, "cost": 3.9640480000000006e-05, "cached": false, "empty": false, "sec": 1.127, "error": null}
+{"ts": 1793992093.659, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 835, "tokens_out": 19, "reasoning": 0, "cost": 3.9640480000000006e-05, "cached": false, "empty": false, "sec": 1.227, "error": null}
+{"ts": 1793992093.66, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 835, "tokens_out": 19, "reasoning": 0, "cost": 3.9640480000000006e-05, "cached": false, "empty": false, "sec": 1.228, "error": null}
+{"ts": 1793992093.664, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 835, "tokens_out": 19, "reasoning": 0, "cost": 3.9640480000000006e-05, "cached": false, "empty": false, "sec": 1.231, "error": null}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 835, "tokens_out": 25, "reasoning": 0, "cost": 4.04404e-05, "cached": false, "empty": false, "sec": 1.28, "error": null}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 1, "kind": "SAY", "text": "Pool is collapsed; taking 0 for remaining rounds", "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 2, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 4, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 5, "kind": "SAY", "text": "Pool collapsed; holding at 0 for the rest", "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 8, "kind": "SAY", "text": "Pool is gone; no units left. Holding at 0 for the final rounds", "is_bot": false}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 3, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 6, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 7, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 9, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 10, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992093.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 23, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992094.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 857, "tokens_out": 5, "reasoning": 0, "cost": 3.875168e-05, "cached": false, "empty": false, "sec": 0.815, "error": null}
+{"ts": 1793992094.676, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 857, "tokens_out": 20, "reasoning": 0, "cost": 4.075148e-05, "cached": false, "empty": false, "sec": 0.96, "error": null}
+{"ts": 1793992094.698, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 857, "tokens_out": 24, "reasoning": 0, "cost": 4.1284760000000006e-05, "cached": false, "empty": false, "sec": 0.983, "error": null}
+{"ts": 1793992094.713, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 857, "tokens_out": 19, "reasoning": 0, "cost": 4.061816000000001e-05, "cached": false, "empty": false, "sec": 0.996, "error": null}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 857, "tokens_out": 20, "reasoning": 0, "cost": 4.075148e-05, "cached": false, "empty": false, "sec": 1.039, "error": null}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992094.753, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 2, "kind": "SAY", "text": "Pool is collapsed; taking 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 4, "kind": "SAY", "text": "Pool is empty; no units left. Taking 0 for all remaining rounds", "is_bot": false}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 5, "kind": "SAY", "text": "Pool is empty; taking 0 for the remaining rounds", "is_bot": false}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 8, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 3, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 6, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 7, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 9, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 10, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992094.754, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 24, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992149.291, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 865, "tokens_out": 17, "reasoning": 0, "cost": 4.070704e-05, "cached": false, "empty": false, "sec": 54.536, "error": null}
+{"ts": 1793992149.303, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 865, "tokens_out": 17, "reasoning": 0, "cost": 4.070704e-05, "cached": false, "empty": false, "sec": 54.549, "error": null}
+{"ts": 1793992149.312, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 865, "tokens_out": 16, "reasoning": 0, "cost": 4.057372e-05, "cached": false, "empty": false, "sec": 54.557, "error": null}
+{"ts": 1793992149.323, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 865, "tokens_out": 18, "reasoning": 0, "cost": 4.084036e-05, "cached": false, "empty": false, "sec": 54.569, "error": null}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 865, "tokens_out": 19, "reasoning": 0, "cost": 4.097368e-05, "cached": false, "empty": false, "sec": 54.777, "error": null}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 1, "kind": "SAY", "text": "Pool is empty; taking 0 as required", "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 2, "kind": "SAY", "text": "Pool is empty; taking 0 for the rest", "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 4, "kind": "SAY", "text": "Pool is empty; nothing left to take", "is_bot": false}
+{"ts": 1793992149.531, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 5, "kind": "SAY", "text": "Pool is gone; taking 0", "is_bot": false}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 8, "kind": "SAY", "text": "Pool is gone; nothing left to take", "is_bot": false}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 3, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 6, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 7, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 9, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 10, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992149.532, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 25, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992150.702, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 16, "reasoning": 0, "cost": 4.0307080000000004e-05, "cached": false, "empty": false, "sec": 1.17, "error": null}
+{"ts": 1793992150.739, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 18, "reasoning": 0, "cost": 4.057372e-05, "cached": false, "empty": false, "sec": 1.204, "error": null}
+{"ts": 1793992150.776, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 20, "reasoning": 0, "cost": 4.084036e-05, "cached": false, "empty": false, "sec": 1.244, "error": null}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 16, "reasoning": 0, "cost": 4.0307080000000004e-05, "cached": false, "empty": false, "sec": 1.993, "error": null}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 16, "reasoning": 0, "cost": 4.0307080000000004e-05, "cached": false, "empty": false, "sec": 1.994, "error": null}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 1, "kind": "SAY", "text": "Pool is empty; taking 0 for the final rounds", "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 2, "kind": "SAY", "text": "Pool is empty; taking 0", "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 4, "kind": "SAY", "text": "Pool is empty, nothing to take", "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 5, "kind": "SAY", "text": "Pool is empty; no units left to take", "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 8, "kind": "SAY", "text": "Pool has collapsed; no units available", "is_bot": false}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 3, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 6, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 7, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 9, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 10, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992151.529, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 26, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992152.335, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 849, "tokens_out": 18, "reasoning": 0, "cost": 4.0129320000000004e-05, "cached": false, "empty": false, "sec": 0.804, "error": null}
+{"ts": 1793992152.347, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 849, "tokens_out": 17, "reasoning": 0, "cost": 3.9996e-05, "cached": false, "empty": false, "sec": 0.816, "error": null}
+{"ts": 1793992152.358, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 849, "tokens_out": 18, "reasoning": 0, "cost": 4.0129320000000004e-05, "cached": false, "empty": false, "sec": 0.827, "error": null}
+{"ts": 1793992152.463, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 849, "tokens_out": 18, "reasoning": 0, "cost": 4.0129320000000004e-05, "cached": false, "empty": false, "sec": 0.931, "error": null}
+{"ts": 1793992152.469, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 849, "tokens_out": 20, "reasoning": 0, "cost": 4.039596e-05, "cached": false, "empty": false, "sec": 0.938, "error": null}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 1, "kind": "SAY", "text": "Pool is empty; taking 0 as required", "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 2, "kind": "SAY", "text": "Pool is collapsed; taking 0 as required", "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 4, "kind": "SAY", "text": "Pool is gone; nothing left to take", "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 5, "kind": "SAY", "text": "Pool is empty; taking 0 for the final rounds", "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 8, "kind": "SAY", "text": "Pool is collapsed; no units left to take", "is_bot": false}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 3, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 6, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 7, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 9, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 10, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992152.471, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 27, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992153.513, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 855, "tokens_out": 18, "reasoning": 0, "cost": 4.039596e-05, "cached": false, "empty": false, "sec": 1.041, "error": null}
+{"ts": 1793992153.518, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 855, "tokens_out": 17, "reasoning": 0, "cost": 4.026264e-05, "cached": false, "empty": false, "sec": 1.046, "error": null}
+{"ts": 1793992153.534, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 855, "tokens_out": 18, "reasoning": 0, "cost": 4.039596e-05, "cached": false, "empty": false, "sec": 1.062, "error": null}
+{"ts": 1793992153.665, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 855, "tokens_out": 18, "reasoning": 0, "cost": 4.039596e-05, "cached": false, "empty": false, "sec": 1.194, "error": null}
+{"ts": 1793992153.682, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 855, "tokens_out": 20, "reasoning": 0, "cost": 4.06626e-05, "cached": false, "empty": false, "sec": 1.21, "error": null}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 1, "kind": "SAY", "text": "Pool has collapsed; taking 0 as required", "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 2, "kind": "SAY", "text": "Pool is gone; taking 0 for the final round", "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 4, "kind": "SAY", "text": "Pool has collapsed; taking 0 as required", "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 5, "kind": "SAY", "text": "Pool is collapsed; taking 0 as required", "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 8, "kind": "SAY", "text": "Pool collapsed; no units left to take", "is_bot": false}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 3, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 6, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 7, "kind": "SAY", "text": "Same as before for me, a small take and then we see what happens.", "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 9, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 10, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992153.683, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 28, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992154.328, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 5, "reasoning": 0, "cost": 3.884056e-05, "cached": false, "empty": false, "sec": 0.643, "error": null}
+{"ts": 1793992154.451, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 18, "reasoning": 0, "cost": 4.057372e-05, "cached": false, "empty": false, "sec": 0.768, "error": null}
+{"ts": 1793992154.498, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 5, "reasoning": 0, "cost": 3.884056e-05, "cached": false, "empty": false, "sec": 0.812, "error": null}
+{"ts": 1793992154.614, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 18, "reasoning": 0, "cost": 4.057372e-05, "cached": false, "empty": false, "sec": 0.929, "error": null}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 859, "tokens_out": 19, "reasoning": 0, "cost": 4.0707040000000005e-05, "cached": false, "empty": false, "sec": 0.94, "error": null}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 1, "kind": "SAY", "text": "Pool is collapsed; taking 0 as required", "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 2, "kind": "SAY", "text": "Pool is empty; nothing to take this final round", "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 4, "kind": "SAY", "text": "Pool is empty; taking 0 as required", "is_bot": false}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 3, "kind": "SAY", "text": "Round is going smoothly, I'll stay modest with what I take.", "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 6, "kind": "SAY", "text": "Pool is holding up okay, so I'll keep going at this pace.", "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 7, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 9, "kind": "SAY", "text": "I'm not in a rush, taking only a little this time around.", "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 10, "kind": "SAY", "text": "Looks steady to me, nothing worrying in the pool numbers yet.", "is_bot": true}
+{"ts": 1793992154.624, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 29, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
+{"ts": 1793992155.4, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 2, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 819, "tokens_out": 18, "reasoning": 0, "cost": 3.879612e-05, "cached": false, "empty": false, "sec": 0.775, "error": null}
+{"ts": 1793992155.414, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 5, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 819, "tokens_out": 18, "reasoning": 0, "cost": 3.879612e-05, "cached": false, "empty": false, "sec": 0.787, "error": null}
+{"ts": 1793992155.436, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 1, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 819, "tokens_out": 21, "reasoning": 0, "cost": 3.919608e-05, "cached": false, "empty": false, "sec": 0.812, "error": null}
+{"ts": 1793992155.439, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 8, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 819, "tokens_out": 21, "reasoning": 0, "cost": 3.919608e-05, "cached": false, "empty": false, "sec": 0.812, "error": null}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 4, "kind": "CALL", "model": "deepseek-v4-flash", "sample": 0, "tokens_in": 819, "tokens_out": 20, "reasoning": 0, "cost": 3.906276e-05, "cached": false, "empty": false, "sec": 0.969, "error": null}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 1, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 2, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 4, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 5, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 8, "kind": "TAKE", "asked": 0, "got": 0, "is_bot": false}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 3, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 6, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 7, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 9, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 10, "kind": "TAKE", "asked": 1, "got": 0, "is_bot": true}
+{"ts": 1793992155.595, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 1, "kind": "SAY", "text": "Final round; pool is empty, taking 0 as required", "is_bot": false}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 2, "kind": "SAY", "text": "Pool collapsed; final round, taking 0", "is_bot": false}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 4, "kind": "SAY", "text": "Pool is empty; final take is 0 as required", "is_bot": false}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 5, "kind": "SAY", "text": "Pool is gone; final take is 0", "is_bot": false}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 8, "kind": "SAY", "text": "Pool is empty; final round, taking 0 as required", "is_bot": false}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 3, "kind": "SAY", "text": "Fine here, I'll take a small bit again and keep an eye on the pool.", "is_bot": true}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 6, "kind": "SAY", "text": "Nothing new from my side, just keeping my take low this round.", "is_bot": true}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 7, "kind": "SAY", "text": "Keeping it simple this round, small take, see how the pool does.", "is_bot": true}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 9, "kind": "SAY", "text": "Pool looks fine to me so far, I'm taking a small amount again.", "is_bot": true}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 10, "kind": "SAY", "text": "I think we're all being careful, which is good for the pool.", "is_bot": true}
+{"ts": 1793992155.596, "episode": "deepseek-v4-flash-N10-neutral0-1001", "round": 30, "seat": 0, "kind": "POOL", "pool": 0.0, "collapsed": true}
