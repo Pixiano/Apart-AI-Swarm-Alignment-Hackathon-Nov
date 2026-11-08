@@ -1,0 +1,2 @@
+qwen3.5-397b hint_generic dose2: confirmatory 6/20; extension 10/40; combined 16/60 = 26.7% Wilson95 (17.1, 39.0); neutral 0/20; Fisher vs neutral p=0.0083; ext episodes with empty calls 0; ext reads 25/40
+gemma-4-31b-it hint_named dose2: confirmatory 5/20; extension 8/40; combined 13/60 = 21.7% Wilson95 (13.1, 33.6); neutral 0/20; Fisher vs neutral p=0.0312; ext episodes with empty calls 27; ext reads 40/40

@@ -1,0 +1,6 @@
+E5 sham_vol (deepseek, dose 2, P-MAIN): 0/50 substantive writes, Wilson95 (0.0, 7.1); reads 0/50
+E6 deny_named under P-TOLD: 4/50 Wilson95 (3.2, 18.8); reads 0/50; reference neutral P-TOLD 13/50; Fisher two-sided p=0.031
+E8 neutral x1.75: 0/30 writes; collapsed 25/30; median collapse round 13
+E8 hint_named2 x1.75: 12/40 writes, Wilson95 (18.1, 45.4); collapsed 33/40
+E8 quota episodes: before collapse 4, at/after 4, no collapse 4 (n quota 12); x1 reference all hosted named-hint: 22 / 70 / 5 of 97
+x1 deepseek hint_named dose 2 (confirmatory): 32/100 writes; quota before/at-after/no-collapse (1, 31, 0)

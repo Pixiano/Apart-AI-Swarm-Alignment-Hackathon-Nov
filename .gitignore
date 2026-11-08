@@ -60,3 +60,4 @@ docs/video/
 !docs/examples/*.jsonl
 !docs/examples/*.json
 !requirements.txt
+!docs/data/*.txt

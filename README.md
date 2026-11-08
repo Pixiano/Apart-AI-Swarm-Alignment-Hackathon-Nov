@@ -26,8 +26,8 @@ Ten seats share a depleting pool. Five seats are LLM agents and five are scripte
 |---|---|
 | `engine/` | `game.py` (pool dynamics), `world.py` (file tree and board), `parser.py` (action parser), `prompts.py` (prompt templates), `bots.py` (scripted peers and paraphrase pools), `runner.py` (one episode), `llm.py` (limiter, cache, budget, hosted and local clients), `cli.py` (one episode), `batch.py` (resumable batch plans), `analysis.py` (confirmatory contrasts), `hashes.py` (hash manifest), `logger.py` |
 | `tests/` | `test_engine.py`, `test_bots.py`, `test_runner.py`, `test_analysis.py` (plain asserts, no framework) |
-| `bench/` | Launch gates (`g1_*.py`), pilot summary (`g2_summary.py`), local timing (`local_sanity.py`), cost tally (`costs.py`); see `bench/README.md` |
-| `prereg/` | `PREREG_v1.md`, `DEVIATIONS.md`, `hashes_v1.1a.json`, `manifest_v1.1b.json` |
+| `bench/` | Launch gates (`g1_*.py`), pilot summary (`g2_summary.py`), local timing (`local_sanity.py`), cost tally (`costs.py`), exploratory runs E5-E8 (`run_extra.py`); see `bench/README.md` |
+| `prereg/` | `PREREG_v1.md`, `DEVIATIONS.md`, `hashes_v1.1a.json`, `manifest_v1.1b.json`, `EXTRA_PREREG.md` (plan for the exploratory runs, written before they ran, with one logged amendment) |
 | `prep/` | Planning notes written before and during the sprint; start at `docs/INDEX.md` |
 | `papers/` | Index of the literature reviewed (PDFs are not tracked) |
 | `docs/` (planned) | `INDEX.md`, `figures/*.svg` |
