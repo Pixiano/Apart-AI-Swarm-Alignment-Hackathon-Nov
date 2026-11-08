@@ -161,6 +161,10 @@ Copies of the report figures are in `docs/figures/`.
 
 Everything above and the remaining known issues are detailed in `prereg/DEVIATIONS.md` and in the report.
 
+## Prior work
+
+Only the sprint weekend (6-8 November 2026) is the judged work. Pre-existing material: an earlier multi-agent collusion project (a separate, frozen repository, not included here) and the literature review of 73 papers (`papers/`), together with the planning notes in `prep/` written before the sprint started; none of it is experimental code or data of this study. The game engine, scripted peers, prompts, analysis, tests, launch tools, pre-registration, all experiment runs and every figure and table were written or produced during the sprint weekend.
+
 ## Citing
 
 See `CITATION.cff`. Kumar, V. (2026). A Hint From a Peer, Not an Instruction: What Makes LLM Agents Open an Unannounced Shared File. https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov
