@@ -33,3 +33,13 @@
 !prereg/
 !prereg/*.md
 !prereg/*.json
+
+# public docs
+!docs/
+!docs/*.md
+!docs/figures/
+!docs/figures/*.svg
+!CITATION.cff
+!TROUBLESHOOTING.md
+!.gitattributes
+!bench/README.md

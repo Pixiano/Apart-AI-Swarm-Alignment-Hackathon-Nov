@@ -1,0 +1,5 @@
+# Keep committed text as LF and check it out as LF, so file hashes in prereg/manifest_v1.1b.json
+# can be checked on Windows without CRLF changes. Existing blobs and the tags are not rewritten.
+* text=auto eol=lf
+*.svg text eol=lf
+*.pdf binary
