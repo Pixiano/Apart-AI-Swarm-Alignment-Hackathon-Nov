@@ -61,3 +61,8 @@ docs/video/
 !docs/examples/*.json
 !requirements.txt
 !docs/data/*.txt
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+!.github/ISSUE_TEMPLATE/
+!.github/ISSUE_TEMPLATE/*.md

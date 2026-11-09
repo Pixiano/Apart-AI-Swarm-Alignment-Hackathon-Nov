@@ -1,0 +1,20 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Unit tests (standard library only, no key, no network)
+        run: |
+          for t in test_engine test_bots test_runner test_analysis; do python -I -B tests/$t.py; done
+      - name: Prompt and pool hashes equal the frozen manifest
+        run: |
+          python -I -B engine/hashes.py > /tmp/now.json
+          python -I -B -c "import json;a=json.load(open('/tmp/now.json'));b=json.load(open('prereg/hashes_v1.1a.json'));print('MATCH' if a==b else 'DIFF');raise SystemExit(a!=b)"

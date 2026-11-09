@@ -1,5 +1,7 @@
 # Does what peers say change whether LLM agents use an unannounced shared file?
 
+[![tests](https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov/actions/workflows/ci.yml/badge.svg)](https://github.com/Pixiano/Apart-AI-Swarm-Alignment-Hackathon-Nov/actions/workflows/ci.yml) ![licence](https://img.shields.io/badge/licence-MIT-blue)
+
 A pre-registered study of scripted-peer speech in a 10-seat commons game. Entry to the Swarm Alignment Hackathon (Apart Research, 6 to 9 November 2026).
 
 ## Summary
