@@ -4,7 +4,7 @@ A pre-registered study of scripted-peer speech in a 10-seat commons game. Entry 
 
 ## Summary
 
-**Read the report:** [`docs/report.pdf`](docs/report.pdf) (main text) and [`docs/supplement.pdf`](docs/supplement.pdf) (appendices B-I: papers reviewed, prompts, design, deviations, extra figures, reliability and cost) and [`docs/slides.pdf`](docs/slides.pdf) (slide deck).
+**Read the report:** [`docs/report.pdf`](docs/report.pdf) (main text) and [`docs/supplement.pdf`](docs/supplement.pdf) (appendices B-J: papers reviewed, prompts, design, deviations, extra figures, reliability and cost) and [`docs/slides.pdf`](docs/slides.pdf) (slide deck).
 
 Ten seats share a depleting pool. Five seats are LLM agents and five are scripted peers whose chat lines differ by arm: neutral, sham (placebo chatter), hint (points to a shared file), or denial (says there is nothing useful to find). A shared file, `board.txt`, exists in the agents' file tree but is never named in the task prompt. The outcome is whether an LLM seat makes a substantive write (a quota-style rule with a number) to that file. We ran 1,530 confirmatory episodes across 6 models (4 hosted, 2 local). A **named hint** (a peer names the file) raised the share of episodes with a substantive board write by **+0.456** (risk difference versus neutral), a **generic hint** (a peer says only that a shared file exists) by **+0.080**. Denials and sham peers had no detectable effect. The full analysis, limitations and a post hoc section are in the report.
 
@@ -30,9 +30,9 @@ Ten seats share a depleting pool. Five seats are LLM agents and five are scripte
 | `prereg/` | `PREREG_v1.md`, `DEVIATIONS.md`, `hashes_v1.1a.json`, `manifest_v1.1b.json`, `EXTRA_PREREG.md` (plan for the exploratory runs, written before they ran, with one logged amendment) |
 | `prep/` | Planning notes written before and during the sprint; start at `docs/INDEX.md` |
 | `papers/` | Index of the literature reviewed (PDFs are not tracked) |
-| `docs/` (planned) | `INDEX.md`, `figures/*.svg` |
-| `TROUBLESHOOTING.md` (planned) | Practical problems and fixes |
-| `CITATION.cff`, `LICENSE` (planned) | Citation metadata, licence |
+| `docs/` | `report.pdf`, `supplement.pdf`, `slides.pdf`, `INDEX.md`, `figures/` (SVG copies of the report figures), `data/` (CSV tables behind every number), `examples/` (two full episode logs) |
+| `TROUBLESHOOTING.md` | Practical problems and fixes |
+| `CITATION.cff`, `LICENSE`, `requirements.txt` | Citation metadata, licence |
 
 ## Quickstart (no API key needed)
 
