@@ -24,7 +24,7 @@ Every deviation: dated row with what, why, and "touched prompt/config/margin/thr
 
 ## How to freeze (local only)
 Run only when you say go; no push without your command.
-1. Commit the plan and analysis code on `main` (no branches, no Claude trailer, authored by you).
+1. Commit the plan and analysis code on `main` (no branches, no co-author trailer, authored by you).
 2. Tag: `git tag prereg-v1`.
 3. Record the commit hash in the plan header and in the report's prior-work note.
 Publishing the tag needs a push; that happens later and only on your command, so a public timestamp does not exist until then. If a public timestamp matters, say so and push the tag the evening of Nov 5.

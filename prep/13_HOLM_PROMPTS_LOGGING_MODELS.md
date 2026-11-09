@@ -55,7 +55,7 @@ Local GGUFs on disk: Gemma-4-12B QAT, Qwen3.5-4B, Qwen3-8B, gpt-oss-20b, Qwen3-1
 Credits and the key arrive by email 1-2 days before the sprint (about Nov 4-5), so hosted numbers cannot feed the Nov 5 freeze. So: the freeze fixes everything that does not depend on the API (questions, margins, prompts, local models, logging) and states the **hosted roster by rule**: take the models in priority order (deepseek-v4-flash, glm-53-flash, qwen3.5-397b, gemma-4-31b-it, gemma-4-26b-a4b-it, qwen3.8-27b, glm-5.2) that pass a plumbing check on the morning of Nov 6 (valid-action rate at least 95%, no empty replies from reasoning, latency acceptable). If the API misbehaves, Friday runs fall back to the local models.
 
 ## 7. Overnight runbook (from last sprint's mistakes)
-- Start the model server in your own terminal, not as a Claude background job (those were reaped under memory pressure).
+- Start the model server in your own terminal, not as a background job (those were reaped under memory pressure).
 - Never kill processes by name or path pattern; stop only the PID you started.
 - Quote every Windows path (spaces!), and check exit codes and server health before writing a result down.
 - One big local model loaded at a time. Keep 1.5 GB VRAM spare (the desktop uses about 3.6 GB).
